@@ -368,10 +368,6 @@ while {_isOk} do {
 
 		_objectHelper setDir (getDir _objectHelper);
 
-		if((_isAllowedUnderGround == 0) && ((_position select 2) < 0)) then {
-			_position set [2,0];
-		};
-
 		_objectHelper setPosATL _position;
 
 		//diag_log format["DEBUG Change BUILDING POS: %1", _position];
