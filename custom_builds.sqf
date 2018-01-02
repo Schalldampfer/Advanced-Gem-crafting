@@ -464,14 +464,13 @@ if(!_cancel) then {
 	_charID = dayz_characterID;
 	_activatingPlayer = player;
   
-  if (DZE_permanentPlot) then {
-        _tmpbuilt setVariable ["ownerPUID",dayz_playerUID,true];
-        PVDZ_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location,dayz_playerUID],[],player,dayz_authKey];
-
-   	 } else {
-        PVDZ_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location],[],player,dayz_authKey];
-   }; 
-
+  	if (DZE_permanentPlot) then {
+        	_tmpbuilt setVariable ["ownerPUID",dayz_playerUID,true];
+        	PVDZ_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location,dayz_playerUID],[],player,dayz_authKey];
+   	} else {
+        	PVDZ_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location],[],player,dayz_authKey];
+   	}; 
+	publicVariableServer "PVDZ_obj_Publish";
 	"Your build was successful!" call dayz_rollingMessages;
 
 	player reveal _tmpbuilt;
