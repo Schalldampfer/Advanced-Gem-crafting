@@ -301,7 +301,7 @@ while {_isOk} do {
 		};
 	};
 	
-	if (DZE_F and _canDo) then {   
+	if (DZE_F and _canDo) then {
 		if (helperDetach) then {
 			_objectHelperDir = getDir _objectHelper;
 			_objectHelper attachTo [player];
@@ -309,7 +309,7 @@ while {_isOk} do {
 			helperDetach = false;
 		} else {
 			_objectHelperPos = getPosATL _objectHelper;
-			detach _objectHelper;                  
+			detach _objectHelper;
 			_objectHelper setPosATL _objectHelperPos;
 			_objectHelperDir = getDir _objectHelper;
 			_objectHelper setVelocity [0,0,0]; //fix sliding glitch
@@ -327,7 +327,7 @@ while {_isOk} do {
 		} else {
 			_objectHelper setDir _dir;
 			_objectHelper setPosATL _position;
-			//diag_log format["DEBUG Rotate BUILDING POS: %1", _position];                 
+			//diag_log format["DEBUG Rotate BUILDING POS: %1", _position];
 		};
 
 	};
@@ -402,10 +402,10 @@ while {_isOk} do {
 		deleteVehicle _objectHelper;
 	};
 
-	if(abs(_objHDiff) > DZE_buildMaxMoveDistance) exitWith {
+	if(abs(_objHDiff) > DZE_buildMaxHeightDistance) exitWith {
 		_isOk = false;
 		_cancel = true;
-		_reason = format[localize "STR_EPOCH_BUILD_FAIL_TOO_FAR",DZE_buildMaxMoveDistance];
+		_reason = format[localize "STR_EPOCH_BUILD_FAIL_HEIGHT",DZE_buildMaxHeightDistance];
 		detach _object;
 		deleteVehicle _object;
 		detach _objectHelper;
@@ -463,13 +463,13 @@ if(!_cancel) then {
 	_tmpbuilt setVariable ["ownerPUID",_playerUID,true];
 	_charID = dayz_characterID;
 	_activatingPlayer = player;
-  
-  	if (DZE_permanentPlot) then {
-        	_tmpbuilt setVariable ["ownerPUID",dayz_playerUID,true];
-        	PVDZ_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location,dayz_playerUID],[],player,dayz_authKey];
-   	} else {
-        	PVDZ_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location],[],player,dayz_authKey];
-   	}; 
+
+	if (DZE_permanentPlot) then {
+		_tmpbuilt setVariable ["ownerPUID",dayz_playerUID,true];
+		PVDZ_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location,dayz_playerUID],[],player,dayz_authKey];
+	} else {
+		PVDZ_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location],[],player,dayz_authKey];
+   	};
 	publicVariableServer "PVDZ_obj_Publish";
 	"Your build was successful!" call dayz_rollingMessages;
 

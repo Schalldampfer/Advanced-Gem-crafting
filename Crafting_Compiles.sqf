@@ -1,4 +1,4 @@
-player_selectSlot = compile preprocessFileLineNumbers "custom\Buildables\ui_selectSlot.sqf";
+//player_selectSlot = compile preprocessFileLineNumbers "custom\Buildables\ui_selectSlot.sqf";
 //fnc_usec_selfActions = compile preprocessFileLineNumbers "custom\fn_selfActions.sqf"; 
 
 fnc_Load_Mats_and_Tools = {
@@ -34,7 +34,7 @@ _counter=0;
 while {count _requiredtools > 0} do { 
 _toolTmp = _requiredtools select 0;
 _tmp_Pos=_weaps find _toolTmp;
-
+_toolTmp = getText (configFile >> "CfgWeapons" >> _toolTmp >> "displayName");
 switch (_counter) do {
 case 0: 
 {
@@ -94,6 +94,7 @@ while{count _requiredmaterials>0} do {
 
 _materialTmp = _requiredmaterials select 0;
 _tmp_Pos=_mags find _materialTmp;
+_materialTmp = getText(configFile >> "cfgMagazines" >> _materialTmp >> "displayName");
 switch (_counter) do {
 case 0: 
 {

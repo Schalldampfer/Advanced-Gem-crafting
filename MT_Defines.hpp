@@ -15,94 +15,94 @@ class Custom_Buildables {
 		requireplot = 1;
 	};
 	class DefaultAmethyst:Default {
-		offset[]={0,3,1};	
+		offset[]={0,3,1};
 		requiredtools[] = {"ItemToolbox"};
-		requiredmaterials[] ={"ItemAmethyst","ItemGoldBar10oz","ItemGoldBar10oz"};
-	};	
+		requiredmaterials[] ={"ItemGoldBar10oz","ItemGoldBar10oz","equip_nails"};
+	};
 	class DefaultCitrine:Default {
 		offset[]={0,2,1};
-		requiredtools[] = {"ItemToolbox"};		
-		requiredmaterials[] ={"ItemCitrine","ItemGoldBar10oz","ItemGoldBar10oz"};
-	};	
+		requiredtools[] = {"ItemToolbox"};
+		requiredmaterials[] ={"ItemGoldBar10oz","ItemGoldBar10oz","equip_nails"};
+	};
 	class DefaultEmerald:Default {
 		offset[]={0,3,1};
-		requiredtools[] = {"ItemToolbox"};		
-		requiredmaterials[] ={"ItemEmerald","ItemGoldBar10oz","ItemGoldBar10oz"};
-	};	
+		requiredtools[] = {"ItemToolbox"};
+		requiredmaterials[] ={"ItemGoldBar10oz","ItemGoldBar10oz","equip_nails"};
+	};
 	class DefaultObsidian:Default {
 		offset[]={0,3,1};
-		requiredtools[] = {"ItemToolbox"};		
-		requiredmaterials[] ={"ItemObsidian","ItemGoldBar10oz","ItemGoldBar10oz"};
-	};	
+		requiredtools[] = {"ItemToolbox"};
+		requiredmaterials[] ={"ItemGoldBar10oz","ItemGoldBar10oz","equip_nails"};
+	};
 	class DefaultRuby:Default {
 		offset[]={0,3,1};
-		requiredtools[] = {"ItemToolbox"};		
-		requiredmaterials[] ={"ItemRuby","ItemGoldBar10oz","ItemGoldBar10oz"};
-	};		
+		requiredtools[] = {"ItemToolbox"};
+		requiredmaterials[] ={"ItemGoldBar10oz","ItemGoldBar10oz","equip_nails"};
+	};
 	class DefaultSapphire:Default {
 		offset[]={0,5,4};
-		requiredtools[] = {"ItemToolbox"};		
-		requiredmaterials[] ={"ItemSapphire","ItemGoldBar10oz","ItemGoldBar10oz"};
-	};	
+		requiredtools[] = {"ItemToolbox"};
+		requiredmaterials[] ={"ItemGoldBar10oz","ItemGoldBar10oz","equip_nails"};
+	};
 	class DefaultTopaz:Default {
 		offset[]={0,10,3};
-		requiredtools[] = {"ItemToolbox"};		
-		requiredmaterials[] ={"ItemTopaz","ItemGoldBar10oz","ItemGoldBar10oz"};
+		requiredtools[] = {"ItemToolbox"};
+		requiredmaterials[] ={"ItemGoldBar10oz","ItemGoldBar10oz","equip_nails"};
 	};
 	class DefaultFlag:Default {
 		offset[]={0,5,4};
-		requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemEtool","ItemSledge"};		
-		requiredmaterials[] ={"ItemSapphire","ItemPole","ItemPole","ItemPole","ItemCanvas"};
+		requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemEtool","ItemSledge"};
+		requiredmaterials[] ={"ItemPole","ItemPole","ItemPole","ItemCanvas"};
 	};
 	class DefaultBeds:Default {
 		offset[]={0,2,0};
-		requiredtools[] = {"ItemToolbox","ItemHatchet","ItemKnife"};		
-		requiredmaterials[] ={"ItemRuby","PartPlankPack","PartPlankPack","PartPlywoodPack"};
-	};	
+		requiredtools[] = {"ItemToolbox","ItemHatchet","ItemKnife"};
+		requiredmaterials[] ={"PartPlankPack","PartPlankPack","PartPlywoodPack","equip_nails"};
+	};
 	class DefaultBenches:Default {
 		offset[]={0,3,1};
-		requiredtools[] = {"ItemToolbox","ItemHatchet","ItemKnife"};		
-		requiredmaterials[] ={"ItemRuby","PartPlankPack","PartPlankPack"};
-	};	
+		requiredtools[] = {"ItemToolbox","ItemHatchet","ItemKnife"};
+		requiredmaterials[] ={"PartPlankPack","PartPlankPack","equip_nails"};
+	};
 	class DefaultCabinets:Default {
 		offset[]={0,2,0};
-		requiredtools[] = {"ItemToolbox","ItemHatchet","ItemKnife"};		
-		requiredmaterials[] ={"ItemRuby","PartPlywoodPack","PartPlywoodPack","PartPlankPack"};
-	};	
+		requiredtools[] = {"ItemToolbox","ItemHatchet","ItemKnife"};
+		requiredmaterials[] ={"PartPlywoodPack","PartPlywoodPack","PartPlankPack","equip_nails"};
+	};
 	class DefaultChairs:Default {
 		offset[]={0,2,0};
-		requiredtools[] = {"ItemToolbox","ItemHatchet","ItemKnife"};		
-		requiredmaterials[] ={"ItemRuby","PartPlankPack"};
-	};	
+		requiredtools[] = {"ItemToolbox","ItemHatchet","ItemKnife"};
+		requiredmaterials[] ={"PartPlankPack","equip_nails"};
+	};
 	class DefaultAppliances:Default {
 		offset[]={0,2,0};
-		requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemSledge"};		
-		requiredmaterials[] ={"ItemCitrine","bulk_PartGeneric","bulk_PartGeneric"};
+		requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemSledge"};
+		requiredmaterials[] ={"bulk_PartGeneric","bulk_PartGeneric"};
 	};
 	class DefaultBathroom:Default {
 		offset[]={0,2,0};
-		requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemSledge"};		
-		requiredmaterials[] ={"ItemCitrine","bulk_PartGeneric"};
+		requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemSledge"};
+		requiredmaterials[] ={"bulk_PartGeneric"};
 	};
 	class DefaultElectronics:Default {
 		offset[]={0,2,1};
-		requiredtools[] = {"ItemToolbox"};		
-		requiredmaterials[] ={"ItemCitrine","PartGeneric","PartGeneric"};
-	};	
+		requiredtools[] = {"ItemToolbox"};
+		requiredmaterials[] ={"PartGeneric","PartGeneric"};
+	};
 	class DefaultFloorCoverings:Default {
 		offset[]={0,2,0};
-		requiredtools[] = {"ItemToolbox","ItemKnife"};		
-		requiredmaterials[] ={"ItemCitrine","ItemCanvas","ItemCanvas","ItemCanvas"};
-	};		
+		requiredtools[] = {"ItemToolbox","ItemKnife"};
+		requiredmaterials[] ={"ItemCanvas","ItemCanvas","ItemCanvas"};
+	};
 	class DefaultPictures:Default {
 		offset[]={0,2,1};
-		requiredtools[] = {"ItemToolbox","ItemHatchet","ItemKnife"};		
-		requiredmaterials[] ={"ItemCitrine","PartPlankPack"};
-	};		
+		requiredtools[] = {"ItemToolbox","ItemHatchet","ItemKnife"};
+		requiredmaterials[] ={"PartPlankPack"};
+	};
 	class DefaultLightbulbs:Default {
 		offset[]={0,2,1};
 		requiredtools[] = {"ItemToolbox"};
-		requiredmaterials[] ={"ItemLightBulb","ItemGoldBar10oz","ItemGoldBar10oz"};
+		requiredmaterials[] ={"ItemLightBulb","ItemBandage","equip_nails"};
 	};
 	class DefaultLightPoles:Default {
 		offset[]={0,3,5};
@@ -113,345 +113,358 @@ class Custom_Buildables {
 		offset[]={0,2,1};
 		requiredtools[] = {"ItemToolbox"};
 		requiredmaterials[] ={"ItemLightBulb","PartGeneric","PartGeneric"};
-	};	
+	};
 	class DefaultDefensesConcrete:Default {
 		offset[]={0,5,1};
 		requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemEtool","ItemSledge"};
-		requiredmaterials[] ={"ItemTopaz","CinderBlocks","CinderBlocks","CinderBlocks"};
+		requiredmaterials[] ={"CinderBlocks","CinderBlocks","CinderBlocks"};
 	};
 	class DefaultDefensesMetal:Default {
 		offset[]={0,5,1};
 		requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemEtool","ItemSledge"};
-		requiredmaterials[] ={"ItemTopaz","bulk_PartGeneric","bulk_PartGeneric"};
-	};	
+		requiredmaterials[] ={"bulk_PartGeneric","bulk_PartGeneric"};
+	};
 	class DefaultBushes:Default {
 		offset[]={0,3,1};
 		requiredtools[] = {"ItemToolbox","ItemEtool"};
-		requiredmaterials[] ={"ItemObsidian"};
-	};	
+		requiredmaterials[] ={"ItemHempSeed"};
+	};
 	class DefaultSmallTrees:Default {
 	offset[]={0,10,4};	//-3	offset[]={0,10,7};
 		requiredtools[] = {"ItemToolbox","ItemEtool"};
-		requiredmaterials[] ={"ItemObsidian"};
+		requiredmaterials[] ={"ItemHempSeed"};
 	};
 	class DefaultMediumTrees:Default {
 		offset[]={0,10,7};
 		requiredtools[] = {"ItemToolbox","ItemEtool"};
-		requiredmaterials[] ={"ItemObsidian"};
-	};	
+		requiredmaterials[] ={"ItemHempSeed"};
+	};
 	class DefaultLargeTrees:Default {
 		offset[]={0,10,11};
 		requiredtools[] = {"ItemToolbox","ItemEtool"};
-		requiredmaterials[] ={"ItemObsidian"};
-	};	
+		requiredmaterials[] ={"ItemHempSeed"};
+	};
 	class DefaultWells:Default {
 		offset[]={0,3,1};
 		requiredtools[] = {"ItemToolbox","ItemEtool","ItemSledge"};
-		requiredmaterials[] ={"ItemObsidian","ItemPole","PartGeneric","CinderBlocks","CinderBlocks","CinderBlocks","MortarBucket"};
+		requiredmaterials[] ={"ItemPole","PartGeneric","CinderBlocks","CinderBlocks","CinderBlocks","MortarBucket"};
 	};
 	class DefaultBillboards:Default {
-	offset[]={0,6,1};	
-	requiredtools[] = {"ItemToolbox","ItemHatchet","ItemEtool","ItemSledge"};		
-	requiredmaterials[] ={"ItemAmethyst","PartPlywoodPack","PartPlywoodPack","PartPlywoodPack","PartPlankPack","ItemPole","ItemPole","CinderBlocks"};
+	offset[]={0,6,1};
+	requiredtools[] = {"ItemToolbox","ItemHatchet","ItemEtool","ItemSledge"};
+	requiredmaterials[] ={"PartPlywoodPack","PartPlywoodPack","PartPlywoodPack","PartPlankPack","ItemPole","ItemPole","CinderBlocks","equip_nails"};
 	};
 	class DefaultBoards:Default {
-	offset[]={0,3,1};	
-	requiredtools[] = {"ItemToolbox","ItemHatchet"};		
-	requiredmaterials[] ={"ItemAmethyst","PartPlywoodPack"};
-	};	
+	offset[]={0,3,1};
+	requiredtools[] = {"ItemToolbox","ItemHatchet"};
+	requiredmaterials[] ={"PartPlywoodPack","equip_nails"};
+	};
 	class DefaultHelipads:Default {
-	offset[]={0,3,0};	
-	requiredtools[] = {"ItemToolbox"};		
-	requiredmaterials[] ={"ItemAmethyst"};
-	};	
+	offset[]={0,3,0};
+	requiredtools[] = {"ItemToolbox"};
+	requiredmaterials[] ={"MortarBucket"};
+	};
 	class DefaultRoadMisc:Default {
-	offset[]={0,3,1};	
+	offset[]={0,3,1};
 	requiredtools[] = {"ItemToolbox","ItemSledge"};
-	requiredmaterials[] ={"ItemAmethyst","ItemPole","ItemPole","CinderBlocks"};
+	requiredmaterials[] ={"ItemPole","ItemPole","CinderBlocks"};
 	};
 	class DefaultSignsMisc:Default {
-	offset[]={0,3,1};	
+	offset[]={0,3,1};
 	requiredtools[] = {"ItemToolbox","ItemSledge"};
-	requiredmaterials[] ={"ItemAmethyst","ItemPole","ItemPole","PartGeneric"};
-	};	
+	requiredmaterials[] ={"ItemPole","ItemPole","PartGeneric"};
+	};
 	class DefaultBarrel:Default {
-	offset[]={0,3,1};	
+	offset[]={0,3,1};
 	requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemSledge"};
-	requiredmaterials[] ={"ItemEmerald","bulk_PartGeneric"};
-	};	
+	requiredmaterials[] ={"bulk_PartGeneric"};
+	};
 	class DefaultBarrels:Default {
-	offset[]={0,3,1};	
+	offset[]={0,3,1};
 	requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemSledge"};
-	requiredmaterials[] ={"ItemAmethyst","bulk_PartGeneric","bulk_PartGeneric","bulk_PartGeneric"};
-	};		
+	requiredmaterials[] ={"bulk_PartGeneric","bulk_PartGeneric","bulk_PartGeneric"};
+	};
 	class DefaultCargoContainersS:Default {
-		offset[]={0,3,1};	
-		requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemSledge"};		
-		requiredmaterials[] ={"ItemEmerald","bulk_PartGeneric","metal_panel_kit"};
+		offset[]={0,3,1};
+		requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemSledge"};
+		requiredmaterials[] ={"bulk_PartGeneric","metal_panel_kit"};
 	
-	};	
+	};
 	class DefaultCargoContainersM:Default {
-		offset[]={0,3,1};	
-		requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemSledge"};		
-		requiredmaterials[] ={"ItemEmerald","bulk_PartGeneric","metal_panel_kit","metal_panel_kit","metal_panel_kit"};
+		offset[]={0,3,1};
+		requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemSledge"};
+		requiredmaterials[] ={"bulk_PartGeneric","metal_panel_kit","metal_panel_kit","metal_panel_kit"};
 	
 	};
 	class DefaultCargoContainersL:Default {
 		offset[]={0,5,2};
-		requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemSledge"};		
-		requiredmaterials[] ={"ItemEmerald","bulk_PartGeneric","metal_panel_kit","metal_panel_kit","metal_panel_kit","metal_panel_kit","metal_panel_kit","metal_panel_kit"};
-	};	
+		requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemSledge"};
+		requiredmaterials[] ={"bulk_PartGeneric","metal_panel_kit","metal_panel_kit","metal_panel_kit","metal_panel_kit","metal_panel_kit","metal_panel_kit"};
+	};
 	class DefaultCargoContainersW:Default {
-		offset[]={0,3,1};	
-		requiredtools[] = {"ItemToolbox","ItemCrowbar"};		
-		requiredmaterials[] ={"ItemEmerald","PartPlankPack","PartPlankPack"};
-	};	
+		offset[]={0,3,1};
+		requiredtools[] = {"ItemToolbox","ItemCrowbar"};
+		requiredmaterials[] ={"PartPlankPack","PartPlankPack"};
+	};
 	class DefaultSunshadesS:Default {
 		offset[]={0,2.5,2};
-		requiredtools[] = {"ItemToolbox","ItemKnife"};		
-		requiredmaterials[] ={"ItemEmerald","ItemPole","ItemPole","ItemPole","ItemCanvas","ItemCanvas"};
+		requiredtools[] = {"ItemToolbox","ItemKnife"};
+		requiredmaterials[] ={"ItemPole","ItemPole","ItemPole","ItemCanvas","ItemCanvas"};
 	};
 	class DefaultSunshadesM:Default {
 		offset[]={0,6,2};
-		requiredtools[] = {"ItemToolbox","ItemKnife"};		
-		requiredmaterials[] ={"ItemEmerald","ItemPole","ItemPole","ItemPole","ItemPole","ItemCanvas","ItemCanvas","ItemCanvas"};
-	};	
+		requiredtools[] = {"ItemToolbox","ItemKnife"};
+		requiredmaterials[] ={"ItemPole","ItemPole","ItemPole","ItemPole","ItemCanvas","ItemCanvas","ItemCanvas"};
+	};
 	class DefaultSunshadesL:Default {
 		offset[]={0,6,2};
-		requiredtools[] = {"ItemToolbox","ItemKnife"};		
-		requiredmaterials[] ={"ItemEmerald","ItemPole","ItemPole","ItemPole","ItemPole","ItemCanvas","ItemCanvas","ItemCanvas","ItemCanvas"};
+		requiredtools[] = {"ItemToolbox","ItemKnife"};
+		requiredmaterials[] ={"ItemPole","ItemPole","ItemPole","ItemPole","ItemCanvas","ItemCanvas","ItemCanvas","ItemCanvas"};
 	};
 	class DefaultSunshadesW:Default {
 		offset[]={0,3,2};
-		requiredtools[] = {"ItemToolbox","ItemKnife"};		
-		requiredmaterials[] ={"ItemEmerald","PartPlankPack","PartPlankPack","ItemCanvas","ItemCanvas"};
-	};	
+		requiredtools[] = {"ItemToolbox","ItemKnife"};
+		requiredmaterials[] ={"PartPlankPack","PartPlankPack","ItemCanvas","ItemCanvas"};
+	};
 	class DefaultTentsS:Default {
 		offset[]={0,6,1};
-		requiredtools[] = {"ItemToolbox","ItemKnife"};		
-		requiredmaterials[] ={"ItemEmerald","PartPlankPack","PartPlankPack","ItemCanvas","ItemCanvas"};
+		requiredtools[] = {"ItemToolbox","ItemKnife"};
+		requiredmaterials[] ={"PartPlankPack","PartPlankPack","ItemCanvas","ItemCanvas"};
 	};
 	class DefaultTentsM:Default {
 		offset[]={0,10,2};
-		requiredtools[] = {"ItemToolbox","ItemEtool","ItemKnife","ItemHatchet"};		
-		requiredmaterials[] ={"ItemTopaz","PartPlankPack","PartPlankPack","ItemCanvas","ItemCanvas","ItemCanvas","ItemCanvas","ItemCanvas"};
-	};	
+		requiredtools[] = {"ItemToolbox","ItemEtool","ItemKnife","ItemHatchet"};
+		requiredmaterials[] ={"PartPlankPack","PartPlankPack","ItemCanvas","ItemCanvas","ItemCanvas","ItemCanvas","ItemCanvas"};
+	};
 	class DefaultTentsL:Default {
 		offset[]={0,13,0};
-		requiredtools[] = {"ItemToolbox","ItemEtool","ItemKnife","ItemHatchet"};		
-		requiredmaterials[] ={"ItemTopaz","bulk_ItemSandbag","bulk_ItemSandbag","PartPlankPack","PartPlankPack","ItemCanvas","ItemCanvas","ItemCanvas","ItemCanvas","ItemCanvas","ItemCanvas","ItemCanvas"};
-	};	
+		requiredtools[] = {"ItemToolbox","ItemEtool","ItemKnife","ItemHatchet"};
+		requiredmaterials[] ={"bulk_ItemSandbag","bulk_ItemSandbag","PartPlankPack","PartPlankPack","ItemCanvas","ItemCanvas","ItemCanvas","ItemCanvas","ItemCanvas","ItemCanvas","ItemCanvas"};
+	};
+	class DefaultGarage:Default {
+		offset[]={0,7,0};
+		requiredtools[] = {"ItemToolbox","ItemEtool"};
+		requiredmaterials[] ={"CinderBlocks","CinderBlocks","CinderBlocks","CinderBlocks","MortarBucket","MortarBucket","ItemTankTrap","ItemTankTrap"};
+	};
 	class DefaultFuel:Default {
 		offset[]={0,7,0};
-		requiredtools[] = {"ItemToolbox","ItemEtool","ItemCrowbar"};		
-		requiredmaterials[] ={"ItemTopaz","ItemFuelBarrel","ItemFuelBarrel","bulk_PartGeneric","bulk_PartGeneric","ItemGenerator"};
-	};	
-	
-	class DefaultMountedWeapons:Default {
-	offset[]={0,7,0};
-	requiredtools[] = {"ItemToolbox"};
-	requiredmaterials[] ={"ItemTopaz","bulk_PartGeneric","bulk_ItemTankTrap","100Rnd_762x51_M240"};
+		requiredtools[] = {"ItemToolbox","ItemEtool","ItemCrowbar"};
+		requiredmaterials[] ={"ItemFuelBarrel","ItemFuelBarrel","bulk_PartGeneric","bulk_PartGeneric","ItemGenerator"};
 	};
-	
-	class DefaultGarage:Default {
-	offset[]={0,7,0};
-	requiredtools[] = {"ItemToolbox"};
-	requiredmaterials[] ={"ItemTopaz","full_cinder_wall_kit","full_cinder_wall_kit","full_cinder_wall_kit","cinder_garage_kit","MortarBucket"};
-};
-	
+	class DefaultMountedWeapons:Default {
+		offset[]={0,7,0};
+		requiredtools[] = {"ItemToolbox"};
+		requiredmaterials[] ={"bulk_PartGeneric","bulk_ItemTankTrap","100Rnd_762x51_M240"};
+	};
+	class DefaultRoad:Default {
+		offset[]={0,3,0};
+		requiredtools[] = {"ItemSledge","ItemPickaxe","ItemEtool"};
+		requiredmaterials[] = {"ItemStone","ItemStone","MortarBucket","PartGeneric"};
+	};
+	class DefaultRoadPaved:Default {
+		offset[]={0,3,0};
+		requiredtools[] = {"ItemSledge","ItemPickaxe","ItemEtool"};
+		requiredmaterials[] = {"ItemStone","ItemStone","MortarBucket","PartGeneric"};
+	};
+	class DefaultRunway:Default {
+		offset[]={0,3,0};
+		requiredtools[] = {"ItemSledge","ItemPickaxe","ItemEtool"};
+		requiredmaterials[] = {"ItemStone","ItemStone","ItemStone","ItemStone","ItemStone","MortarBucket","MortarBucket","bulk_PartGeneric"};
+	};
+
 	//Topaz - Base Defense
 	//48
-	class Defenses{			//26
+	class Defenses{	//26
 	class Hhedgehog_concrete:Default {
 		offset[]={0,7,1};
 		requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemEtool","ItemSledge"};
-		requiredmaterials[] ={"ItemTopaz","CinderBlocks","CinderBlocks","CinderBlocks","CinderBlocks","MortarBucket","MortarBucket"};
+		requiredmaterials[] ={"CinderBlocks","CinderBlocks","CinderBlocks","CinderBlocks","MortarBucket","MortarBucket"};
 	};
 	class Hhedgehog_concreteBig:Default {
 		offset[]={0,7,1};
 		requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemEtool","ItemSledge"};
-		requiredmaterials[] ={"ItemTopaz","CinderBlocks","CinderBlocks","CinderBlocks","CinderBlocks","MortarBucket","MortarBucket"};
-	};	
+		requiredmaterials[] ={"CinderBlocks","CinderBlocks","CinderBlocks","CinderBlocks","MortarBucket","MortarBucket"};
+	};
 	class Base_WarfareBBarrier10xTall:Default {
  		offset[]={0,6,1};
 		requiredtools[] = {"ItemToolbox","ItemEtool"};
-		requiredmaterials[] ={"ItemTopaz","ItemSandbagExLarge5x","ItemSandbagExLarge5x","ItemSandbagExLarge5x","ItemSandbagExLarge5x","ItemSandbagExLarge5x"};
-		};	
+		requiredmaterials[] ={"ItemSandbagExLarge5x","ItemSandbagExLarge5x","ItemSandbagExLarge5x","ItemSandbagExLarge5x","ItemSandbagExLarge5x"};
+		};
 	class Fence_corrugated_plate:Default {
 		offset[]={0,6,1};
 		requiredtools[] = {"ItemToolbox","ItemEtool","ItemSledge"};
-		requiredmaterials[] ={"ItemTopaz","ItemPole","ItemPole","ItemTankTrap","ItemTankTrap","PartWoodLumber","PartWoodLumber"};
+		requiredmaterials[] ={"ItemPole","ItemPole","ItemTankTrap","ItemTankTrap","PartWoodLumber","PartWoodLumber"};
 	};
 	class Fence_Ind_long:Default {
 		offset[]={0,6,2};
 		requiredtools[] = {"ItemToolbox","ItemEtool","ItemSledge"};
-		requiredmaterials[] ={"ItemTopaz","ItemPole","ItemWire","PartWoodLumber"};
-		};
+		requiredmaterials[] ={"ItemPole","ItemWire","PartWoodLumber"};
+	};
 	class Land_CncBlock:Default {
 		offset[]={0,4,1};
 		requiredtools[] = {"ItemToolbox","ItemEtool","ItemSledge"};
-		requiredmaterials[] ={"ItemTopaz","CinderBlocks","CinderBlocks","CinderBlocks"};
-		};
+		requiredmaterials[] ={"CinderBlocks","CinderBlocks","CinderBlocks"};
+	};
 	class Land_CncBlock_D:Default {
 		offset[]={0,4,1};
 		requiredtools[] = {"ItemToolbox","ItemEtool","ItemSledge"};
-		requiredmaterials[] ={"ItemTopaz","CinderBlocks","CinderBlocks","CinderBlocks"};
-		};
+		requiredmaterials[] ={"CinderBlocks","CinderBlocks","CinderBlocks"};
+	};
 	class Land_CncBlock_Stripes:Default {
 		offset[]={0,4,1};
 		requiredtools[] = {"ItemToolbox","ItemEtool","ItemSledge"};
-		requiredmaterials[] ={"ItemTopaz","CinderBlocks","CinderBlocks","CinderBlocks"};
-		};
+		requiredmaterials[] ={"CinderBlocks","CinderBlocks","CinderBlocks"};
+	};
 	class Land_fort_artillery_nest_EP1:Default {
 		offset[]={0,15,1};
 		requiredtools[] = {"ItemToolbox","ItemHatchet","ItemEtool","ItemSledge"};
-		requiredmaterials[] ={"ItemTopaz","PartPlankPack","PartPlankPack","PartPlankPack","PartPlankPack"};
-		};
+		requiredmaterials[] ={"PartPlankPack","PartPlankPack","PartPlankPack","PartPlankPack"};
+	};
 	class MAP_fort_artillery_nest:Default {
 		offset[]={0,15,1};
 		requiredtools[] = {"ItemToolbox","ItemHatchet","ItemEtool","ItemSledge"};
-		requiredmaterials[] ={"ItemTopaz","PartPlankPack","PartPlankPack","PartPlankPack","PartPlankPack"};
-	};	
+		requiredmaterials[] ={"PartPlankPack","PartPlankPack","PartPlankPack","PartPlankPack"};
+	};
 	class Land_fort_rampart_EP1:Default {
 		offset[]={0,8,1};
 		requiredtools[] = {"ItemToolbox","ItemHatchet","ItemEtool","ItemSledge"};
-		requiredmaterials[] ={"ItemTopaz","PartPlankPack","PartPlankPack"};
+		requiredmaterials[] ={"PartPlankPack","PartPlankPack"};
 	};
 	class MAP_fort_rampart:Default {
 		offset[]={0,8,1};
 		requiredtools[] = {"ItemToolbox","ItemHatchet","ItemEtool","ItemSledge"};
-		requiredmaterials[] ={"ItemTopaz","PartPlankPack","PartPlankPack"};
-		};	
+		requiredmaterials[] ={"PartPlankPack","PartPlankPack"};
+	};
 	class MAP_Barbedwire:Default {
 		offset[]={0,5,1};
 		requiredtools[] = {"ItemToolbox","ItemEtool"};
-		requiredmaterials[] ={"ItemTopaz","ItemTankTrap","ItemTankTrap","ItemWire"};
-		};
+		requiredmaterials[] ={"ItemTankTrap","ItemTankTrap","ItemWire"};
+	};
 	class MAP_concrete_block:Default {
 		offset[]={0,10,1};
 		requiredtools[] = {"ItemToolbox","ItemEtool","ItemSledge"};
-		requiredmaterials[] ={"ItemTopaz","CinderBlocks","CinderBlocks","CinderBlocks","CinderBlocks","CinderBlocks","CinderBlocks","CinderBlocks","CinderBlocks"};
-		};
+		requiredmaterials[] ={"CinderBlocks","CinderBlocks","CinderBlocks","CinderBlocks","CinderBlocks","CinderBlocks","CinderBlocks","CinderBlocks"};
+	};
 	class MAP_Concrete_Ramp:Default {
 		offset[]={0,8,2};
 		requiredtools[] = {"ItemToolbox","ItemEtool","ItemSledge"};
-		requiredmaterials[] ={"ItemTopaz","CinderBlocks","CinderBlocks","CinderBlocks","CinderBlocks"};
-		};
+		requiredmaterials[] ={"CinderBlocks","CinderBlocks","CinderBlocks","CinderBlocks"};
+	};
 	class MAP_Fort_Razorwire:DefaultTopaz {
 		offset[]={0,6,1};
 		requiredtools[] = {"ItemToolbox"};
-		requiredmaterials[] ={"ItemTopaz"};
-		};
+		requiredmaterials[] ={"ItemWire"};
+	};
 	class MAP_HBarrier5_round15:Default {
 		offset[]={0,6,1};
 		requiredtools[] = {"ItemToolbox","ItemEtool"};
-		requiredmaterials[] ={"ItemTopaz","ItemSandbagExLarge5x"};
-		};
+		requiredmaterials[] ={"ItemSandbagExLarge5x"};
+	};
 	class MAP_plot_provizorni:Default {
 		offset[]={0,6,2};
 		requiredtools[] = {"ItemToolbox","ItemEtool","ItemSledge"};
-		requiredmaterials[] ={"ItemTopaz","ItemPole","ItemWire","PartWoodLumber"};
-		};
+		requiredmaterials[] ={"ItemPole","ItemWire","PartWoodLumber"};
+	};
 	class MAP_prebehlavka:Default {
 		offset[]={0,7,1};
 		requiredtools[] = {"ItemToolbox","ItemHatchet","ItemCrowbar"};
-		requiredmaterials[] ={"ItemTopaz","PartPlankPack","PartPlankPack","PartPlankPack","PartPlankPack"};
-		};
+		requiredmaterials[] ={"PartPlankPack","PartPlankPack","PartPlankPack","PartPlankPack"};
+	};
 	class MAP_prolejzacka:Default {
 		offset[]={0,6,1};
 		requiredtools[] = {"ItemToolbox","ItemHatchet","ItemCrowbar"};
-		requiredmaterials[] ={"ItemTopaz","PartPlankPack","PartPlankPack"};
-		};
+		requiredmaterials[] ={"PartPlankPack","PartPlankPack"};
+	};
 	class MAP_ramp_concrete:Default {
 		offset[]={0,10,1};
 		requiredtools[] = {"ItemToolbox","ItemEtool","ItemSledge"};
-		requiredmaterials[] ={"ItemTopaz","CinderBlocks","CinderBlocks","CinderBlocks","CinderBlocks"};
-			};
+		requiredmaterials[] ={"CinderBlocks","CinderBlocks","CinderBlocks","CinderBlocks"};
+	};
 	class MAP_woodenRamp:Default {
 		offset[]={0,4,1};
 		requiredtools[] = {"ItemToolbox","ItemHatchet","ItemCrowbar"};
-		requiredmaterials[] ={"ItemTopaz","PartPlankPack","PartPlankPack"};
-			};
+		requiredmaterials[] ={"PartPlankPack","PartPlankPack"};
+	};
 	class MAP_obstacle_get_over:Default {
 		offset[]={0,4,1};
 		requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemEtool","ItemSledge"};
-		requiredmaterials[] ={"ItemTopaz","bulk_PartGeneric","bulk_PartGeneric"};
-		};
+		requiredmaterials[] ={"bulk_PartGeneric","bulk_PartGeneric"};
+	};
 	class MAP_obstacle_prone:Default {
 		offset[]={0,4,1};
 		requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemEtool","ItemSledge"};
-		requiredmaterials[] ={"ItemTopaz","bulk_PartGeneric","bulk_PartGeneric"};
+		requiredmaterials[] ={"bulk_PartGeneric","bulk_PartGeneric"};
 	};
 	class MAP_obstacle_run_duck:Default {
 		offset[]={0,4,1};
 		requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemEtool","ItemSledge"};
-		requiredmaterials[] ={"ItemTopaz","bulk_PartGeneric","bulk_PartGeneric"};
-	};			
+		requiredmaterials[] ={"bulk_PartGeneric","bulk_PartGeneric"};
 	};
-	class Forts{			//12
+	};
+	class Forts{	//12
 	class Land_Fort_Watchtower_EP1:Default {
 		offset[]={0,10,2};
-        requiredtools[] = {"ItemEtool","ItemToolbox","ItemCrowbar","ItemSledge"};	
-		requiredmaterials[] ={"ItemTopaz","ItemBriefcase100oz","ItemBriefcase100oz","desert_large_net_kit","ItemSandbagExLarge5x","ItemSandbagExLarge5x","ItemSandbagExLarge5x","PartPlankPack","PartPlankPack","bulk_PartGeneric"};
-		};	
+		requiredtools[] = {"ItemEtool","ItemToolbox","ItemCrowbar","ItemSledge"};
+		requiredmaterials[] ={"ItemBriefcase100oz","ItemBriefcase100oz","desert_large_net_kit","ItemSandbagExLarge5x","ItemSandbagExLarge5x","ItemSandbagExLarge5x","PartPlankPack","PartPlankPack","bulk_PartGeneric"};
+		};
 	class MAP_fort_watchtower:Default {
 		offset[]={0,10,2};
-        requiredtools[] = {"ItemEtool","ItemToolbox","ItemCrowbar","ItemSledge"};	
-		requiredmaterials[] ={"ItemTopaz","ItemBriefcase100oz","ItemBriefcase100oz","ItemBriefcase100oz","ItemBriefcase100oz","forest_large_net_kit","ItemSandbagExLarge5x","ItemSandbagExLarge5x","PartPlankPack","PartPlankPack","bulk_PartGeneric"};
+		requiredtools[] = {"ItemEtool","ItemToolbox","ItemCrowbar","ItemSledge"};
+		requiredmaterials[] ={"ItemBriefcase100oz","ItemBriefcase100oz","ItemBriefcase100oz","ItemBriefcase100oz","forest_large_net_kit","ItemSandbagExLarge5x","ItemSandbagExLarge5x","PartPlankPack","PartPlankPack","bulk_PartGeneric"};
  	};
 	class CDF_WarfareBBarracks:Default {
 		offset[]={0,15,0};
 		requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemEtool","ItemSledge"};
-		requiredmaterials[] ={"ItemTopaz","ItemBriefcase100oz","forest_large_net_kit","ItemSandbagExLarge5x","ItemSandbagExLarge5x","ItemSandbagExLarge5x","bulk_ItemSandbag","bulk_ItemSandbag","PartPlankPack","PartPlankPack"};
+		requiredmaterials[] ={"ItemBriefcase100oz","forest_large_net_kit","ItemSandbagExLarge5x","ItemSandbagExLarge5x","ItemSandbagExLarge5x","bulk_ItemSandbag","bulk_ItemSandbag","PartPlankPack","PartPlankPack"};
 	};
 	class USMC_WarfareBBarracks:Default {
 		offset[]={0,15,0};
 		requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemEtool","ItemSledge"};
-		requiredmaterials[] ={"ItemTopaz","ItemBriefcase100oz","forest_large_net_kit","ItemSandbagExLarge5x","ItemSandbagExLarge5x","ItemSandbagExLarge5x","bulk_ItemSandbag","bulk_ItemSandbag","PartPlankPack","PartPlankPack"};
-		};	
+		requiredmaterials[] ={"ItemBriefcase100oz","forest_large_net_kit","ItemSandbagExLarge5x","ItemSandbagExLarge5x","ItemSandbagExLarge5x","bulk_ItemSandbag","bulk_ItemSandbag","PartPlankPack","PartPlankPack"};
+	};
 	class MAP_fortified_nest_big:Default {
 		offset[]={0,10,1};
 		requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemEtool","ItemSledge"};
-		requiredmaterials[] ={"ItemTopaz","ItemBriefcase100oz","bulk_ItemSandbag","bulk_ItemSandbag","bulk_ItemSandbag","bulk_ItemSandbag","PartPlankPack","PartPlankPack"};
-		};	
+		requiredmaterials[] ={"ItemBriefcase100oz","bulk_ItemSandbag","bulk_ItemSandbag","bulk_ItemSandbag","bulk_ItemSandbag","PartPlankPack","PartPlankPack"};
+	};
 	class MAP_fortified_nest_small:Default {
 		offset[]={0,8,1};
 		requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemEtool","ItemHatchet"};
-		requiredmaterials[] ={"ItemTopaz","bulk_ItemSandbag","bulk_ItemSandbag","PartPlankPack","PartPlankPack","ItemCanvas"};
-		};	
+		requiredmaterials[] ={"bulk_ItemSandbag","bulk_ItemSandbag","PartPlankPack","PartPlankPack","ItemCanvas"};
+	};
 	class MAP_Pristresek_mensi:Default {
 		offset[]={0,8,0};
 		requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemEtool","ItemHatchet"};
-		requiredmaterials[] ={"ItemTopaz","bulk_ItemSandbag","bulk_ItemSandbag","PartPlankPack","PartPlankPack","ItemCanvas"};
-		};	
+		requiredmaterials[] ={"bulk_ItemSandbag","bulk_ItemSandbag","PartPlankPack","PartPlankPack","ItemCanvas"};
+	};
 	class MAP_Mil_Mil_Guardhouse:Default {
 		offset[]={0,10,2};
 		requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemEtool","ItemSledge"};
-		requiredmaterials[] ={"ItemTopaz","ItemBriefcase100oz","ItemBriefcase100oz","bulk_PartGeneric","PartPlywoodPack","PartPlankPack","PartPlankPack","CinderBlocks","CinderBlocks","CinderBlocks","CinderBlocks","CinderBlocks"};				
-		};	
+		requiredmaterials[] ={"ItemBriefcase100oz","ItemBriefcase100oz","bulk_PartGeneric","PartPlywoodPack","PartPlankPack","PartPlankPack","CinderBlocks","CinderBlocks","CinderBlocks","CinderBlocks","CinderBlocks"};				
+	};
 	class MAP_GuardShed:Default {
 		offset[]={0,8,2};
-		requiredtools[] = {"ItemToolbox","ItemHatchet","ItemKnife"};		
-		requiredmaterials[] ={"ItemTopaz","PartPlankPack","PartPlankPack","PartPlankPack"};		
-	};	
+		requiredtools[] = {"ItemToolbox","ItemHatchet","ItemKnife"};
+		requiredmaterials[] ={"PartPlankPack","PartPlankPack","PartPlankPack"};
+	};
 	class MAP_Fortress_02:Default {
 		offset[]={0,10,2};
 		requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemEtool","ItemSledge"};
-		requiredmaterials[] ={"ItemTopaz","bulk_ItemSandbag","bulk_ItemSandbag","bulk_ItemSandbag","PartPlankPack","ItemCanvas","ItemCanvas"};
-		};	
+		requiredmaterials[] ={"bulk_ItemSandbag","bulk_ItemSandbag","bulk_ItemSandbag","PartPlankPack","ItemCanvas","ItemCanvas"};
+	};
 	class MAP_Fortress_01:Default {
 		offset[]={0,8,1};
 		requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemEtool","ItemSledge"};
-		requiredmaterials[] ={"ItemTopaz","bulk_ItemSandbag","bulk_ItemSandbag","PartPlankPack","ItemCanvas"};
-		};	
+		requiredmaterials[] ={"bulk_ItemSandbag","bulk_ItemSandbag","PartPlankPack","ItemCanvas"};
+	};
 	class WarfareBDepot:Default {
 		offset[]={0,17,3};
 		requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemEtool","ItemSledge"};
-		requiredmaterials[] ={"ItemTopaz","ItemBriefcase100oz","ItemBriefcase100oz","ItemSandbagExLarge5x","ItemSandbagExLarge5x","bulk_ItemSandbag","bulk_ItemSandbag","bulk_ItemSandbag","bulk_ItemSandbag","bulk_ItemSandbag","PartPlankPack","PartPlankPack"};
-		};	
+		requiredmaterials[] ={"ItemBriefcase100oz","ItemBriefcase100oz","ItemSandbagExLarge5x","ItemSandbagExLarge5x","bulk_ItemSandbag","bulk_ItemSandbag","bulk_ItemSandbag","bulk_ItemSandbag","bulk_ItemSandbag","PartPlankPack","PartPlankPack"};
+	};
 	
 	};
-	class Tents{			//8
+	class Tents{	//8
 	class MAP_MASH:DefaultTentsS {};
 	class MAP_Stan:DefaultTentsS {};
 	class MAP_tent_small_west:DefaultTentsS {};
@@ -459,32 +472,104 @@ class Custom_Buildables {
 	class MAP_tent_east:DefaultTentsM {};
 	class MAP_tent2_west:DefaultTentsM {};
 	class CDF_WarfareBFieldhHospital:DefaultTentsL {};
-	class USMC_WarfareBFieldhHospital:DefaultTentsL {};		
+	class USMC_WarfareBFieldhHospital:DefaultTentsL {};
 	};
-	class Towers{			//2
+	class Towers{	//2
 		class MAP_vez:Default {
-		offset[]={0,5,4};
-		requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemSledge"};		
-		requiredmaterials[] ={"ItemEmerald","bulk_PartGeneric","metal_panel_kit"};
-		};			
+			offset[]={0,5,4};
+			requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemSledge"};
+			requiredmaterials[] ={"bulk_PartGeneric","metal_panel_kit"};
+		};
+		class MAP_komin:Default {
+			offset[]={0,5,4};
+			requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemSledge"};
+			requiredmaterials[] ={"full_cinder_wall_kit","full_cinder_wall_kit","full_cinder_wall_kit","full_cinder_wall_kit","bulk_PartGeneric","MortarBucket","MortarBucket"};
+		};
 	};
-	
-	class Garage:DefaultGarage {
-	class Land_MBG_Garage_Single_D:DefaultGarage{};
-	class Land_MBG_Garage_Single_A:DefaultGarage{};
-	class Land_MBG_Garage_Single_B:DefaultGarage{};
-	class Land_MBG_Garage_Single_C:DefaultGarage{};
+	class Communications {
+		class MAP_antenna_small_roof {
+			requiredtools[] = {"ItemToolbox"};
+			requiredmaterials[] ={"PartGeneric","equip_1inch_metal_pipe","equip_1inch_metal_pipe"};
+		};
+		class MAP_antenna_small_roof_1:MAP_antenna_small_roof {};
+		class MAP_antenna_big_roof:MAP_antenna_small_roof {};
+		class MAP_Antenna {
+			offset[]={0,5,4};
+			requiredtools[] = {"ItemToolbox"};
+			requiredmaterials[] ={"bulk_PartGeneric","equip_2inch_metal_pipe","equip_2inch_metal_pipe"};
+		};
+		class MAP_Vysilac_FM {
+			offset[]={0,5,10};
+			requiredtools[] = {"ItemToolbox"};
+			requiredmaterials[] ={"bulk_PartGeneric","equip_2inch_metal_pipe","equip_2inch_metal_pipe"};
+		};
+		class MAP_telek1 {
+			offset[]={0,5,10};
+			requiredtools[] = {"ItemToolbox"};
+			requiredmaterials[] ={"bulk_PartGeneric","bulk_PartGeneric","equip_2inch_metal_pipe","equip_2inch_metal_pipe","equip_2inch_metal_pipe","equip_2inch_metal_pipe"};
+		};
 	};
 
-class Fuel:DefaultFuel {
-	class Land_A_FuelStation_Feed:DefaultFuel{};
-};
+	class Garage:DefaultGarage {
+		class Land_MBG_Garage_Single_D:DefaultGarage{};
+		class Land_MBG_Garage_Single_A:DefaultGarage{};
+		class Land_MBG_Garage_Single_B:DefaultGarage{};
+		class Land_MBG_Garage_Single_C:DefaultGarage{};
+	};
+	
+	class Fuel:DefaultFuel {
+		class Land_A_FuelStation_Feed:DefaultFuel{};
+	};
 	class MountedWeapons:DefaultMountedWeapons {
-	class M2StaticMG:DefaultMountedWeapons{};
+	class M2StaticMG:DefaultMountedWeapons{
+		offset[]={0,7,0};
+		requiredtools[] = {"ItemToolbox"};
+		requiredmaterials[] ={"bulk_PartGeneric","bulk_ItemTankTrap","100Rnd_127x99_M2"};
+	};
+	class KORD_high:DefaultMountedWeapons{
+		offset[]={0,7,0};
+		requiredtools[] = {"ItemToolbox"};
+		requiredmaterials[] ={"bulk_PartGeneric","bulk_ItemTankTrap","50Rnd_127x108_KORD"};
+	};
+	class DSHKM_RU:DefaultMountedWeapons{
+		offset[]={0,7,0};
+		requiredtools[] = {"ItemToolbox"};
+		requiredmaterials[] ={"bulk_PartGeneric","bulk_ItemTankTrap","50Rnd_127x107_DSHKM"};
+	};
+	class SPG9_CDF:DefaultMountedWeapons {
+		offset[]={0,6,0};
+		requiredtools[] = {"ItemToolbox"};
+		requiredmaterials[] ={"bulk_PartGeneric","bulk_ItemTankTrap","ItemPole","PG9_AT"};
+	};
+	class Stinger_Pod:DefaultMountedWeapons {
+		offset[]={0,8,0};
+		requiredtools[] = {"ItemToolbox"};
+		requiredmaterials[] ={"bulk_PartGeneric","bulk_ItemTankTrap","ItemPole","ItemPole","Stinger","Stinger"};
+	};
+	class Igla_AA_pod_TK_EP1:DefaultMountedWeapons {
+		offset[]={0,8,0};
+		requiredtools[] = {"ItemToolbox"};
+		requiredmaterials[] ={"bulk_PartGeneric","bulk_ItemTankTrap","ItemPole","ItemPole","Igla","Igla"};
+	};
+	class M252:DefaultMountedWeapons {
+		offset[]={0,4,1};
+		requiredtools[] = {"ItemToolbox","ItemEtool"};
+		requiredmaterials[] ={"ItemTopaz","bulk_PartGeneric","bulk_ItemTankTrap","ItemPole","equip_nails","OG9_HE"};
+	};
+	class D30_CDF:DefaultMountedWeapons {
+		offset[]={0,8,0};
+		requiredtools[] = {"ItemToolbox","ItemEtool","ItemCrowbar","ItemSledge"};
+		requiredmaterials[] ={"ItemTopaz","ItemPole","ItemPole","ItemPole","ItemPole","bulk_PartGeneric","bulk_ItemTankTrap","bulk_ItemTankTrap","OG9_HE","OG9_HE","OG9_HE","OG9_HE"};
+	};
+	class SearchLight_US_EP1:DefaultMountedWeapons {
+		offset[]={0,6,0};
+		requiredtools[] = {"ItemToolbox"};
+		requiredmaterials[] ={"ItemLightBulb","PartGlass","ItemGenerator","ItemPole","ItemPole","ItemPole","ItemPole"};
+	};
 }
 	//Emerald - Exterior Items
 	//119
-	class Barrels{				//13
+	class Barrels{	//13
 	class MAP_Barel1:DefaultBarrel {};
 	class MAP_Barel3:DefaultBarrel {};
 	class MAP_Barel4:DefaultBarrel {};
@@ -499,13 +584,13 @@ class Fuel:DefaultFuel {
 	class MAP_barrel_sand:DefaultBarrel {};
 	class MAP_barrel_water:DefaultBarrel {};
 	};
-	class CargoContainers{     	//16
+	class CargoContainers{//16
 	class Land_Crates_EP1:DefaultCargoContainersS {}; //3 small plastic
 	class Land_Misc_Cargo1E_EP1:DefaultCargoContainersL {};
-	class Land_Misc_Cargo1Eo_EP1:DefaultCargoContainersL {};	
+	class Land_Misc_Cargo1Eo_EP1:DefaultCargoContainersL {};
 	class Land_Misc_Cargo2E:DefaultCargoContainersL {};
 	class Land_Misc_Cargo2E_EP1:DefaultCargoContainersL {};
-	class Misc_Cargo1B_military:DefaultCargoContainersL {};	
+	class Misc_Cargo1B_military:DefaultCargoContainersL {};
 	class Land_transport_crates_EP1:DefaultCargoContainersW {}; //5 wooden
 	class MAP_drevena_bedna:DefaultCargoContainersW {}; //1 wooden
 	class MAP_metalcrate:DefaultCargoContainersS {}; //FSloot crate green
@@ -517,9 +602,8 @@ class Fuel:DefaultFuel {
 	class MAP_Misc_cargo_cont_small2:DefaultCargoContainersS {}; //smaller white
 	class MAP_Misc_cargo_cont_tiny:DefaultCargoContainersS {}; //smaller white version 2
 
-	
 	};
-	class ConstructionSite{     //29  *
+	class ConstructionSite{	 //29  *
 	class Land_Ind_BoardsPack1:DefaultEmerald {};
 	class Land_Ind_BoardsPack2:DefaultEmerald {};
 	class Land_Misc_Coil_EP1:DefaultEmerald {};
@@ -543,27 +627,24 @@ class Fuel:DefaultFuel {
 	class MAP_Misc_palletsfoiled_heap:DefaultEmerald {};
 	class Misc_concrete:DefaultEmerald {};
 	class MAP_Ind_Timbers:DefaultEmerald {};
-	class MAP_P_Stavebni_kozy:DefaultEmerald {};	
-	class MAP_P_bedna:DefaultEmerald {};	
+	class MAP_P_Stavebni_kozy:DefaultEmerald {};
+	class MAP_P_bedna:DefaultEmerald {};
 	class MAP_garbage_misc:DefaultEmerald {};
 	class MAP_garbage_paleta:DefaultEmerald {};
 	class MAP_Misc_TyreHeap:DefaultEmerald {};
 	class MAP_pneu:DefaultEmerald {};
 	};
-	class MiscLarge{           	//18  *
+	class MiscLarge{	//18  *
 	class Land_Ind_TankSmall:Default {
-		offset[]={0,5,1};	
-		requiredmaterials[] ={"ItemEmerald","ItemBriefcase100oz","PartFueltank","PartFueltank","PartFueltank","bulk_PartGeneric"};		
-		requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemSledge"};	
-	};		
+		offset[]={0,5,1};
+		requiredmaterials[] ={"ItemBriefcase100oz","PartFueltank","PartFueltank","PartFueltank","bulk_PartGeneric"};
+		requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemSledge"};
+	};
 	class Land_Misc_ConcBox_EP1:DefaultEmerald {};
 	class MAP_AirCond_big:DefaultEmerald {};
 	class MAP_AirCond_small:DefaultEmerald {};
 	class MAP_AirCondition_A:DefaultEmerald {};
 	class MAP_AirCondition_B:DefaultEmerald {};
-	class MAP_antenna_big_roof:DefaultEmerald {};
-	class MAP_antenna_small_roof:DefaultEmerald {};
-	class MAP_antenna_small_roof_1:DefaultEmerald {};
 	class MAP_bouda_plech:DefaultEmerald {};
 	class MAP_drevo_hromada:DefaultEmerald {};
 	class MAP_kasna_new:DefaultEmerald {};
@@ -574,9 +655,9 @@ class Fuel:DefaultFuel {
 	class Pile_of_wood:DefaultEmerald {};
 	class MAP_Misc_WoodPile:DefaultEmerald {};
 	};
-	class MiscSmall{           	//25  *
+	class MiscSmall{	//25  *
 	class Axe_woodblock:DefaultEmerald {};
-	class Garbage_can:DefaultEmerald {};	
+	class Garbage_can:DefaultEmerald {};
 	class Garbage_container:DefaultEmerald {};
 	class MAP_popelnice:DefaultEmerald {};
 	class Haystack_small:DefaultEmerald {};
@@ -585,44 +666,45 @@ class Fuel:DefaultFuel {
 	class Land_transport_cart_EP1:DefaultEmerald {};
 	class MAP_ChickenCoop:DefaultEmerald {};
 	class MAP_fire:DefaultEmerald {};
-	class MAP_GasMeterExt:DefaultEmerald {};	
+	class MAP_GasMeterExt:DefaultEmerald {};
 	class MAP_KBud:DefaultEmerald {};
 	class MAP_Misc_Boogieman:DefaultEmerald {};
 	class MAP_Misc_loudspeakers:DefaultEmerald {};
 	class MAP_Misc_PostBox:DefaultEmerald {};
-	class MAP_parabola_big:DefaultEmerald {};	
+	class MAP_parabola_big:DefaultEmerald {};
 	class MAP_phone_box:DefaultEmerald {};
 	class MAP_psi_bouda:DefaultEmerald {};
 	class MAP_snowman:DefaultEmerald {};
 	class MAP_Sphere:DefaultEmerald {};
 	class MAP_Sphere2:DefaultEmerald {};
-	class MAP_Toilet:DefaultEmerald {};
+//	class MAP_Toilet:DefaultEmerald {};
 	class MAP_Piskoviste:DefaultEmerald {};
 	class MAP_Houpacka:DefaultEmerald {};
-	class MAP_brana:DefaultEmerald {};	
+	class MAP_brana:DefaultEmerald {};
+	class Suitcase:DefaultEmerald {};
 	};
-	class Scaffolding{         	//3
+	class Scaffolding{	//3
 	class MAP_leseni2x:Default {
 		offset[]={0,3,1.5};
-		requiredtools[] = {"ItemToolbox","ItemCrowbar"};		
-		requiredmaterials[] ={"ItemEmerald","ItemPole","ItemPole","ItemPole","ItemPole","ItemPole","PartPlankPack","PartPlankPack"};
-		};
+		requiredtools[] = {"ItemToolbox","ItemCrowbar"};
+		requiredmaterials[] ={"ItemPole","ItemPole","ItemPole","ItemPole","ItemPole","PartPlankPack","PartPlankPack"};
+	};
 	class MAP_leseni4x:Default {
 		offset[]={0,3,3.5};
-		requiredtools[] = {"ItemToolbox","ItemCrowbar"};		
-		requiredmaterials[] ={"ItemEmerald","ItemPole","ItemPole","ItemPole","ItemPole","ItemPole","ItemPole","ItemPole","PartPlankPack","PartPlankPack","PartPlankPack","PartPlankPack"};
-		};
+		requiredtools[] = {"ItemToolbox","ItemCrowbar"};
+		requiredmaterials[] ={"ItemPole","ItemPole","ItemPole","ItemPole","ItemPole","ItemPole","ItemPole","PartPlankPack","PartPlankPack","PartPlankPack","PartPlankPack"};
+	};
 	class MAP_Misc_Scaffolding:Default {
 		offset[]={0,5,2.5};
-	    requiredtools[] = {"ItemToolbox","ItemCrowbar"};		
-		requiredmaterials[] ={"ItemEmerald","ItemPole","ItemPole","ItemPole","ItemPole","ItemPole","PartPlankPack","PartPlankPack"};
-			
-	};	
+		requiredtools[] = {"ItemToolbox","ItemCrowbar"};
+		requiredmaterials[] ={"ItemPole","ItemPole","ItemPole","ItemPole","ItemPole","PartPlankPack","PartPlankPack"};
+	
 	};
-	class Sunshades{           	//15
+	};
+	class Sunshades{	//15
 	class Land_covering_hut_EP1:DefaultSunshadesW {};
 	class Land_covering_hut_big_EP1:DefaultSunshadesW {};
-	class Land_Market_shelter_EP1:DefaultSunshadesW {};		
+	class Land_Market_shelter_EP1:DefaultSunshadesW {};
 	class Land_sunshade_EP1:DefaultSunshadesW {};
 	class MAP_Camo_Box:DefaultSunshadesW {};
 	class MAP_CamoNet_EAST:DefaultSunshadesS {};
@@ -634,12 +716,12 @@ class Fuel:DefaultFuel {
 	class MAP_Pristresek:DefaultSunshadesL {};
 	class MAP_stanek_3:DefaultSunshadesW {};
 	class MAP_stanek_3B:DefaultSunshadesW {};
-	class MAP_stanek_3_d:DefaultSunshadesW {};	
+	class MAP_stanek_3_d:DefaultSunshadesW {};
 	};
 
  	//Amethyst - Signage
 	//110
-	class Billboards{		//20
+	class Billboards{	//20
 	class MAP_Bilboard_alkohol:DefaultBillboards {};
 	class MAP_Bilboard_Beach:DefaultBillboards {};
 	class MAP_Bilboard_Bienvenudo:DefaultBillboards {};
@@ -661,7 +743,7 @@ class Fuel:DefaultFuel {
 	class MAP_Bilboard_vstup_do_CDF:DefaultBillboards {};
 	class MAP_Bilboard_zlute_zgrynda:DefaultBillboards {};
 	};
-	class Boards{			//7
+	class Boards{	//7
 	class Sign_Checkpoint:DefaultBoards {};
 	class Sign_Checkpoint_TK_EP1:DefaultBoards {};
 	class Sign_Checkpoint_US_EP1:DefaultBoards {};
@@ -670,11 +752,11 @@ class Fuel:DefaultFuel {
 	class Sign_MP_ind_EP1:DefaultBoards {};
 	class Sign_MP_op_EP1:DefaultBoards {};
 	};
-	class Helipads{			//6
+	class Helipads{	//6
 	class HeliH:DefaultHelipads {};
 	class HeliHCivil:DefaultHelipads {};
 	class HeliHRescue:DefaultHelipads {};
-	class MAP_Heli_H_army:DefaultHelipads {};	
+	class MAP_Heli_H_army:DefaultHelipads {};
 	class MAP_Heli_H_cross:DefaultHelipads {};
 	class Sr_border:DefaultHelipads {};
 	};
@@ -695,21 +777,21 @@ class Fuel:DefaultFuel {
 	class MAP_sign_oneWay:DefaultSignsMisc {};
 	class MAP_sign_rightDirection_new:DefaultSignsMisc {};
 	};
-	class RoadsMisc{		//12
-	class FlagCarrierChecked:DefaultSignsMisc {};	
+	class RoadsMisc{	//12
+	class FlagCarrierChecked:DefaultSignsMisc {};
 	class FlagCarrierSmall:DefaultSignsMisc {};
 	class Land_arrows_desk_R:DefaultRoadMisc {};
-	class Land_arrows_desk_L:DefaultRoadMisc {};	
-	class RoadCone:DefaultAmethyst {};	
-	class Land_coneLight:DefaultAmethyst {};		
+	class Land_arrows_desk_L:DefaultRoadMisc {};
+	class RoadCone:DefaultAmethyst {};
+	class Land_coneLight:DefaultAmethyst {};
 	class Land_RedWhiteBarrier:DefaultSignsMisc {};
-	class MAP_arrows_yellow_L:DefaultSignsMisc {};		
-	class MAP_arrows_yellow_R:DefaultSignsMisc {};	
+	class MAP_arrows_yellow_L:DefaultSignsMisc {};
+	class MAP_arrows_yellow_R:DefaultSignsMisc {};
 	class RoadBarrier_long:DefaultSignsMisc {};
 	class RoadBarrier_light:DefaultSignsMisc {};
-	class Sign_tape_redwhite:DefaultRoadMisc {};	
+	class Sign_tape_redwhite:DefaultRoadMisc {};
 	};
-	class SignsMisc{		//13
+	class SignsMisc{	//13
 	class MAP_rail_50km:DefaultSignsMisc {};
 	class MAP_rail_KoniecNastupista:DefaultSignsMisc {};
 	class MAP_rail_o25m_Priecestie:DefaultSignsMisc {};
@@ -724,7 +806,7 @@ class Fuel:DefaultFuel {
 	class Sign_1L_Firstaid:DefaultSignsMisc {};
 	class Sign_1L_Firstaid_EP1:DefaultSignsMisc {};
 	};
-	class TrafficSigns{		//37
+	class TrafficSigns{	//37
 	class MAP_sign_airport_new:DefaultSignsMisc {};
 	class MAP_sign_badRoadside:DefaultSignsMisc {};
 	class MAP_sign_children_new:DefaultSignsMisc {};
@@ -763,22 +845,22 @@ class Fuel:DefaultFuel {
 	class MAP_sign_wiatingProhibited_new:DefaultSignsMisc {};
 	class MAP_sign_widthLimit:DefaultSignsMisc {};
 	};
-		
+
 	//Obsidian - From the Ground
 	//78
-	class Bushes{			//10
-	class MAP_b_betulaHumilis:DefaultBushes {};		
-	class MAP_b_canina2s:DefaultBushes {};		
-	class MAP_b_corylus:DefaultBushes {};		
-	class MAP_b_corylus2s:DefaultBushes {};		
-	class MAP_b_craet1:DefaultBushes {};		
-	class MAP_b_craet2:DefaultBushes {};		
-	class MAP_b_pmugo:DefaultBushes {};		
-	class MAP_b_prunus:DefaultBushes {};		
-	class MAP_b_salix2s:DefaultBushes {};		
-	class MAP_b_sambucus:DefaultBushes {};		
+	class Bushes{	//10
+	class MAP_b_betulaHumilis:DefaultBushes {};
+	class MAP_b_canina2s:DefaultBushes {};
+	class MAP_b_corylus:DefaultBushes {};
+	class MAP_b_corylus2s:DefaultBushes {};
+	class MAP_b_craet1:DefaultBushes {};
+	class MAP_b_craet2:DefaultBushes {};
+	class MAP_b_pmugo:DefaultBushes {};
+	class MAP_b_prunus:DefaultBushes {};
+	class MAP_b_salix2s:DefaultBushes {};
+	class MAP_b_sambucus:DefaultBushes {};
 	};
-	class SmallPlants{		//29
+	class SmallPlants{	//29
 	class MAP_c_autumn_flowers:DefaultBushes {};
 	class MAP_c_blueBerry:DefaultBushes {};
 	class MAP_c_caluna:DefaultBushes {};
@@ -809,7 +891,7 @@ class Fuel:DefaultFuel {
 	class MAP_pumpkin:DefaultBushes {};
 	class MAP_pumpkin2:DefaultBushes {};
 	};
-	class SmallTrees{		//13
+	class SmallTrees{	//13
 	class MAP_t_betula1f:DefaultSmallTrees {offset[]={0,10,2};	//-5
 	};
 	class MAP_t_betula2w:DefaultSmallTrees {offset[]={0,10,2};	//-5
@@ -821,90 +903,88 @@ class Fuel:DefaultFuel {
 	class MAP_t_pinusN1s:DefaultSmallTrees {};
 	};
 	class MediumTrees{
-	class MAP_t_alnus2s:DefaultMediumTrees {};	
+	class MAP_t_alnus2s:DefaultMediumTrees {};
 	class MAP_t_carpinus2s:DefaultMediumTrees {offset[]={0,10,9};	//+2
 	};
 	class MAP_t_betula2s:DefaultMediumTrees {offset[]={0,10,11};	//+4
 	};
-	class MAP_t_fagus2s:DefaultMediumTrees {offset[]={0,10,8};		//+1
+	class MAP_t_fagus2s:DefaultMediumTrees {offset[]={0,10,8};	//+1
 	};
 	class MAP_t_pyrus2s:DefaultMediumTrees {};
 	class MAP_t_salix2s:DefaultMediumTrees {};
 	class MAP_t_sorbus2s:DefaultMediumTrees {};
 	};
-	class LargeTrees{		//14
+	class LargeTrees{	//14
 	class MAP_t_acer2s:DefaultLargeTrees {offset[]={0,10,9};	//-2
 	};
 	class MAP_t_betula2f:DefaultLargeTrees {};
 	class MAP_t_fagus2f:DefaultLargeTrees {offset[]={0,10,14};	//+3
 	};
-	class MAP_t_fraxinus2s:DefaultLargeTrees {offset[]={0,10,9}; //-2	
+	class MAP_t_fraxinus2s:DefaultLargeTrees {offset[]={0,10,9}; //-2
 	};
-	class MAP_t_larix3f:DefaultLargeTrees {offset[]={0,10,13}; //+2	
+	class MAP_t_larix3f:DefaultLargeTrees {offset[]={0,10,13}; //+2
 	};
 	class MAP_t_larix3s:DefaultLargeTrees {};
 	class MAP_t_picea2s:DefaultLargeTrees {offset[]={0,10,8};	//-3
 	};
 	class MAP_t_picea3f:DefaultLargeTrees {offset[]={0,10,15};	//+4
 	};
-	class MAP_t_pinusN2s:DefaultLargeTrees {offset[]={0,10,9}; //-2		
+	class MAP_t_pinusN2s:DefaultLargeTrees {offset[]={0,10,9}; //-2
 	};
 	class MAP_t_pinusS2f:DefaultLargeTrees {};
-	class MAP_t_populus3s:DefaultLargeTrees {offset[]={0,10,14};	//+3	
+	class MAP_t_populus3s:DefaultLargeTrees {offset[]={0,10,14};	//+3
 	};
 	class MAP_t_quercus2f:DefaultLargeTrees {};
 	class MAP_t_quercus3s:DefaultLargeTrees {};
 	};
-	class TheDead{			//7
+	class TheDead{	//7
 	class Hanged:Default {
-        offset[]={0,3,3};
+		offset[]={0,3,3};
 		requiredtools[] = {"ItemToolbox","ItemEtool"};
-		requiredmaterials[] ={"ItemObsidian","ItemZombieParts","ItemZombieParts","ItemCanvas"};
-			
+		requiredmaterials[] ={"ItemZombieParts","ItemZombieParts","ItemCanvas"};
 	};
 	class Hanged_MD:Default {
-        offset[]={0,3,4};
+		offset[]={0,3,4};
 		requiredtools[] = {"ItemToolbox","ItemEtool"};
-		requiredmaterials[] ={"ItemObsidian","ItemZombieParts","ItemZombieParts","ItemCanvas"};	
+		requiredmaterials[] ={"ItemZombieParts","ItemZombieParts","ItemCanvas"};	
 	};
 	class Body:Default {
-        offset[]={0,3,0};
+		offset[]={0,3,0};
 		requiredtools[] = {"ItemToolbox","ItemEtool"};
-		requiredmaterials[] ={"ItemObsidian","ItemZombieParts","ItemCanvas","ItemCanvas"};
-		};
+		requiredmaterials[] ={"ItemZombieParts","ItemCanvas","ItemCanvas"};
+	};
 	class GraveCross1:Default {
 		offset[]={0,3,1};
 		requiredtools[] = {"ItemToolbox","ItemEtool","ItemHatchet"};
-		requiredmaterials[] ={"ItemObsidian","PartWoodLumber"};
+		requiredmaterials[] ={"PartWoodLumber"};
 	};
 	class GraveCross2:Default {
 		offset[]={0,3,1};
 		requiredtools[] = {"ItemToolbox","ItemEtool","ItemHatchet"};
-		requiredmaterials[] ={"ItemObsidian","PartWoodLumber"};
+		requiredmaterials[] ={"PartWoodLumber"};
 	};
 	class GraveCrossHelmet:Default {
 		offset[]={0,3,1};
 		requiredtools[] = {"ItemToolbox","ItemEtool","ItemHatchet"};
-		requiredmaterials[] ={"ItemObsidian","PartWoodLumber"};
+		requiredmaterials[] ={"PartWoodLumber"};
 	};
-	class Mass_grave:Default {
+	class Mass_grave_DZ:Default {
 		offset[]={0,6,0};
 		requiredtools[] = {"ItemToolbox","ItemEtool","ItemHatchet"};
-		requiredmaterials[] ={"ItemObsidian","ItemZombieParts","ItemZombieParts","ItemZombieParts","ItemZombieParts","ItemZombieParts","ItemZombieParts"};
-	};	
+		requiredmaterials[] ={"ItemZombieParts","ItemZombieParts","ItemZombieParts","ItemZombieParts","ItemZombieParts","ItemZombieParts"};
 	};
-	class Wells{			//5
-	class Land_Misc_Well_C_EP1:DefaultWells {};	
-	class Land_Misc_Well_L_EP1:DefaultWells {};	
-	class MAP_Misc_Well:DefaultWells {};	
-	class MAP_Misc_WellPump:DefaultWells {};	
-	class MAP_pumpa:DefaultWells {};	
-	};	  
-  	
-	
+	};
+	class Wells{	//5
+	class Land_Misc_Well_C_EP1:DefaultWells {};
+	class Land_Misc_Well_L_EP1:DefaultWells {};
+	class MAP_Misc_Well:DefaultWells {};
+	class MAP_Misc_WellPump:DefaultWells {};
+	class Land_pumpa:DefaultWells {};
+	};
+
 	//Sapphire - Flags
 	//26
-	class FlagsNations{			    //6
+	class FlagsNations{	//6
 	class FlagCarrierBAF:DefaultFlag {};
 	class FlagCarrierCzechRepublic_EP1:DefaultFlag {};
 	class FlagCarrierGermany_EP1:DefaultFlag {};
@@ -912,7 +992,7 @@ class Fuel:DefaultFuel {
 	class FlagCarrierRU:DefaultFlag {};
 	class FlagCarrierUSA:DefaultFlag {};
 	};
-	class FlagsOrganizations{		//8
+	class FlagsOrganizations{	//8
 	class FlagCarrierCDFEnsign_EP1:DefaultFlag {};
 	class FlagCarrierCDF_EP1:DefaultFlag {};
 	class FlagCarrierINS:DefaultFlag {};
@@ -920,39 +1000,39 @@ class Fuel:DefaultFuel {
 	class FlagCarrierTFKnight_EP1:DefaultFlag {};
 	class FlagCarrierTKMilitia_EP1:DefaultFlag {};
 	class FlagCarrierUNO_EP1:DefaultFlag {};
-	class FlagCarrierUSArmy_EP1:DefaultFlag {};	
+	class FlagCarrierUSArmy_EP1:DefaultFlag {};
 	};
-	class FlagsMedical{				//3
+	class FlagsMedical{	//3
 	class FlagCarrierRedCrescent_EP1:DefaultFlag {};
 	class FlagCarrierRedCross_EP1:DefaultFlag {};
-	class FlagCarrierRedCrystal_EP1:DefaultFlag {};	
+	class FlagCarrierRedCrystal_EP1:DefaultFlag {};
 	};
-	class FlagsPlain{				//4
-	class FlagCarrierBLUFOR_EP1:DefaultFlag {};	
+	class FlagsPlain{	//4
+	class FlagCarrierBLUFOR_EP1:DefaultFlag {};
 	class FlagCarrierINDFOR_EP1:DefaultFlag {};
-	class FlagCarrierOPFOR_EP1:DefaultFlag {};		
-	class FlagCarrierWhite_EP1:DefaultFlag {};	
+	class FlagCarrierOPFOR_EP1:DefaultFlag {};
+	class FlagCarrierWhite_EP1:DefaultFlag {};
 	};
-	class FlagsMisc{				//5
-	class FlagCarrierArmex_EP1:DefaultFlag {};	
-	class FlagCarrierBIS_EP1:DefaultFlag {};	
-	class FlagCarrierIONblack_PMC:DefaultFlag {};	
-	class FlagCarrierIONwhite_PMC:DefaultFlag {};	
-	class FlagCarrierPOWMIA_EP1:DefaultFlag {};		
-	};	
- 
+	class FlagsMisc{	//5
+	class FlagCarrierArmex_EP1:DefaultFlag {};
+	class FlagCarrierBIS_EP1:DefaultFlag {};
+	class FlagCarrierIONblack_PMC:DefaultFlag {};
+	class FlagCarrierIONwhite_PMC:DefaultFlag {};
+	class FlagCarrierPOWMIA_EP1:DefaultFlag {};
+	};
+
 	//Ruby - Interior Items - Furniture 
 	//69
-	class Beds{        			//7
+	class Beds{	//7
 	class MAP_bed_husbands:DefaultBeds {};
 	class MAP_F_postel_manz_kov:DefaultBeds {};
 	class MAP_F_postel_panelak2:DefaultBeds {};
 	class MAP_F_Vojenska_palanda:DefaultBeds {};
 	class MAP_postel_manz_kov:DefaultBeds {};
 	class MAP_postel_panelak1:DefaultBeds {};
-	class MAP_vojenska_palanda:DefaultBeds {};	
+	class MAP_vojenska_palanda:DefaultBeds {};
 	};
-	class Benches{     			//8
+	class Benches{	//8
 	class Bleacher_EP1:DefaultBenches {};
 	class Land_Bench_EP1:DefaultBenches {};
 	class MAP_Church_chair:DefaultBenches {};
@@ -960,9 +1040,9 @@ class Fuel:DefaultFuel {
 	class MAP_lavicka_1:DefaultBenches {};
 	class MAP_lavicka_2:DefaultBenches {};
 	class MAP_lavicka_3:DefaultBenches {};
-	class MAP_lavicka_4:DefaultBenches {};	
+	class MAP_lavicka_4:DefaultBenches {};
 	};
-	class Cabinets{    			//20
+	class Cabinets{	//20
 	class Land_Cabinet_EP1:DefaultCabinets {};
 	class Land_Chest_EP1:DefaultCabinets {};	
 	class MAP_almara:DefaultCabinets {};
@@ -977,13 +1057,13 @@ class Fuel:DefaultFuel {
 	class MAP_Dhangar_borwnskrin:DefaultCabinets {};
 	class MAP_Dhangar_brownskrin:DefaultCabinets {};
 	class MAP_Dhangar_knihovna:DefaultCabinets {};
-	class MAP_Dhangar_whiteskrin:DefaultCabinets {};	
+	class MAP_Dhangar_whiteskrin:DefaultCabinets {};
 	class MAP_library_a:DefaultCabinets {};
 	class MAP_Skrin_bar:DefaultCabinets {};
 	class MAP_Skrin_opalena:DefaultCabinets {};
-	class MAP_Truhla_stara:DefaultCabinets {};	
+	class MAP_Truhla_stara:DefaultCabinets {};
 };	
-	class Chairs{     			//12
+	class Chairs{	//12
 	class FoldChair:DefaultChairs {};
 	class Land_Chair_EP1:DefaultChairs {};
 	class MAP_armchair:DefaultChairs {};
@@ -997,13 +1077,13 @@ class Fuel:DefaultFuel {
 	class MAP_office_chair:DefaultChairs {};
 	class WoodChair:DefaultChairs {};
 		};
-	class Desks{       			//4
+	class Desks{	//4
 	class Desk:DefaultCabinets {};
 	class MAP_conference_table_a:DefaultCabinets {};
 	class MAP_Dhangar_psacistul:DefaultCabinets {};
 	class MAP_office_table_a:DefaultCabinets {};
 		};
-	class Shelves{     			//8
+	class Shelves{	//8
 		class Land_Rack_EP1:DefaultBeds {};
 		class Land_Shelf_EP1:DefaultBeds {};
 		class MAP_case_d:DefaultBeds {};
@@ -1011,53 +1091,53 @@ class Fuel:DefaultFuel {
 		class MAP_case_wall_unit_part_d:DefaultBeds {};
 		class MAP_F_skrin_bar:DefaultBeds {};
 		class MAP_Skrin_bar:DefaultBeds {};
-		class MAP_library_a:DefaultBeds {};	
+		class MAP_library_a:DefaultBeds {};
 		};
-	class Tables{      			//10
-	class FoldTable:DefaultBeds {};	
+	class Tables{	//10
+	class FoldTable:DefaultBeds {};
 	class Land_Table_EP1:DefaultBeds {};
-	class Land_Table_small_EP1:DefaultBeds {};	
-	class MAP_kitchen_table_a:DefaultBeds {};		
-	class MAP_lobby_table:DefaultBeds {};	
-	class MAP_SmallTable:DefaultBeds {};	
-	class MAP_stul_hospoda:DefaultBeds {};	
-	class MAP_stul_kuch1:DefaultBeds {};	
-	class MAP_Table:DefaultBeds {};	
-	class MAP_table_drawer:DefaultBeds {};	
+	class Land_Table_small_EP1:DefaultBeds {};
+	class MAP_kitchen_table_a:DefaultBeds {};
+	class MAP_lobby_table:DefaultBeds {};
+	class MAP_SmallTable:DefaultBeds {};
+	class MAP_stul_hospoda:DefaultBeds {};
+	class MAP_stul_kuch1:DefaultBeds {};
+	class MAP_Table:DefaultBeds {};
+	class MAP_table_drawer:DefaultBeds {};
 	};
 
 	//Citrine - Interior Items - Other
 	//80
-	class Appliances{   	//6   
+	class Appliances{	//6   
 	class MAP_Dkamna_bila:DefaultAppliances {};
 	class MAP_Dkamna_uhli:DefaultAppliances {};
-	class MAP_F_Dkamna_uhli:DefaultAppliances {};	
+	class MAP_F_Dkamna_uhli:DefaultAppliances {};
 	class MAP_fridge:DefaultAppliances {};
 	class MAP_Kitchenstove_Elec:DefaultAppliances {};
-	class MAP_washing_machine:DefaultAppliances {};	
+	class MAP_washing_machine:DefaultAppliances {};
 	};
-	class Bathroom{       	//7
+	class Bathroom{	//7
 	class MAP_F_bath:DefaultBathroom {};
 	class MAP_lekarnicka:DefaultBathroom {};
 	class MAP_P_Basin_A:DefaultBathroom {};
 	class MAP_P_bath:DefaultBathroom {};
 	class MAP_P_sink:DefaultBathroom {};
 	class MAP_P_toilet_b_02:DefaultBathroom {};
-	class MAP_toilet_b:DefaultBathroom {};	
+	class MAP_toilet_b:DefaultBathroom {};
 	};
-	class Commercial{      	//10
-	class Land_Bag_EP1:DefaultCitrine {};	
-	class Land_bags_EP1:DefaultCitrine {};	
-	class Land_Basket_EP1:DefaultCitrine {};	
-	class Land_Sack_EP1:DefaultCitrine {};	
-	class Land_Wicker_basket_EP1:DefaultCitrine {};	
-	class MAP_icebox:DefaultBathroom {};	
-	class MAP_lobby_counter:DefaultBathroom {};	
-	class MAP_pultskasou:DefaultCitrine {};	
-	class MAP_shelf:DefaultBathroom {};	
-	class MAP_vending_machine:DefaultBathroom {};		
+	class Commercial{	//10
+	class Land_Bag_EP1:DefaultCitrine {};
+	class Land_bags_EP1:DefaultCitrine {};
+	class Land_Basket_EP1:DefaultCitrine {};
+	class Land_Sack_EP1:DefaultCitrine {};
+	class Land_Wicker_basket_EP1:DefaultCitrine {};
+	class MAP_icebox:DefaultBathroom {};
+	class MAP_lobby_counter:DefaultBathroom {};
+	class MAP_pultskasou:DefaultCitrine {};
+	class MAP_shelf:DefaultBathroom {};
+	class MAP_vending_machine:DefaultBathroom {};
 	};
-	class Electronics{     	//11
+	class Electronics{	//11
 	class MAP_misc_videoprojector:DefaultElectronics {};
 	class MAP_misc_videoprojector_platno:DefaultElectronics {};
 	class MAP_mutt_vysilacka:DefaultElectronics {};
@@ -1068,42 +1148,42 @@ class Fuel:DefaultFuel {
 	class MAP_satelitePhone:DefaultElectronics {};
 	class MAP_tv_a:DefaultElectronics {};
 	class Radio:DefaultElectronics {};
-	class SmallTV:DefaultElectronics {};	
+	class SmallTV:DefaultElectronics {};
 	};
-	class FloorCoverings{  	//5
-	class Land_Blankets_EP1:DefaultFloorCoverings {};	
-	class Land_Carpet_2_EP1:DefaultFloorCoverings {};	
+	class FloorCoverings{	//5
+	class Land_Blankets_EP1:DefaultFloorCoverings {};
+	class Land_Carpet_2_EP1:DefaultFloorCoverings {};
 	class Land_Carpet_EP1:DefaultFloorCoverings {};
-	class Land_Carpet_rack_EP1:DefaultFloorCoverings {};	
-	class Land_Pillow_EP1:DefaultFloorCoverings {};		
+	class Land_Carpet_rack_EP1:DefaultFloorCoverings {};
+	class Land_Pillow_EP1:DefaultFloorCoverings {};	
 	};
-	class MiscInterior{    	//21
-	class Can_small:DefaultCitrine {};	
+	class MiscInterior{	//21
+	class Can_small:DefaultCitrine {};
 	class FloorMop:DefaultCitrine {};
-	class Land_Bowl_EP1:DefaultCitrine {};	
+	class Land_Bowl_EP1:DefaultCitrine {};
 	class Land_Bucket_EP1:DefaultCitrine {};
-	class Land_Canister_EP1:DefaultCitrine {};	
+	class Land_Canister_EP1:DefaultCitrine {};
 	class Land_Teapot_EP1:DefaultCitrine {};
-	class Land_Urn_EP1:DefaultCitrine {};	
+	class Land_Urn_EP1:DefaultCitrine {};
 	class Land_Vase_EP1:DefaultCitrine {};
-	class Land_Vase_loam_EP1:DefaultCitrine {};	
+	class Land_Vase_loam_EP1:DefaultCitrine {};
 	class Land_Vase_loam_2_EP1:DefaultCitrine {};
-	class Land_Vase_loam_3_EP1:DefaultCitrine {};	
+	class Land_Vase_loam_3_EP1:DefaultCitrine {};
 	class Land_Water_pipe_EP1:DefaultCitrine {};
-	class MAP_briefcase:DefaultCitrine {};	
+	class MAP_briefcase:DefaultCitrine {};
 	class MAP_bucket:DefaultCitrine {};
-	class MAP_FuelCan:DefaultCitrine {};	
+	class MAP_FuelCan:DefaultCitrine {};
 	class MAP_MetalBucket:DefaultCitrine {};
-	class MAP_SmallObj_money:DefaultCitrine {};	
+	class MAP_SmallObj_money:DefaultCitrine {};
 	class MAP_SmallObj_spukayev_docs_WPN:DefaultCitrine {};
 	class MAP_drapes:DefaultCitrine {};
-	class MAP_drapes_long:DefaultCitrine {};	
-	class MAP_box_c:DefaultCitrine {};	
+	class MAP_drapes_long:DefaultCitrine {};
+	class MAP_box_c:DefaultCitrine {};
 	};
-	class Pictures{        	//20
+	class Pictures{	//20
 	class MAP_nastenka2:DefaultPictures {};
-	class MAP_nastenkaX:DefaultPictures {};	
-	class MAP_obraz_kancl4:DefaultPictures {};	
+	class MAP_nastenkaX:DefaultPictures {};
+	class MAP_obraz_kancl4:DefaultPictures {};
 	class MAP_picture_a:DefaultPictures {};
 	class MAP_picture_a_02:DefaultPictures {};
 	class MAP_picture_a_03:DefaultPictures {};
@@ -1125,19 +1205,19 @@ class Fuel:DefaultFuel {
 	
 	//Lightbulb - Lightbulbs + Fixtures
 	//33
-	class Lightbulbs{     	//10
-	class ASC_EU_BulbBLUP:DefaultLightbulbs {};	
-	class ASC_EU_BulbGRNP:DefaultLightbulbs {};	
-	class ASC_EU_BulbPURP:DefaultLightbulbs {};	
-	class ASC_EU_BulbREDP:DefaultLightbulbs {};	
-	class ASC_EU_BulbYELP:DefaultLightbulbs {};	
-	class ASC_EU_BulbBLUB:DefaultLightbulbs {};	
-	class ASC_EU_BulbGRNB:DefaultLightbulbs {};	
-	class ASC_EU_BulbPURB:DefaultLightbulbs {};	
-	class ASC_EU_BulbREDB:DefaultLightbulbs {};	
-	class ASC_EU_BulbYELB:DefaultLightbulbs {};		
-    };
-	class LightPoles{      	//11
+	class Lightbulbs{	//10
+	class ASC_EU_BulbBLUP:DefaultLightbulbs {};
+	class ASC_EU_BulbGRNP:DefaultLightbulbs {};
+	class ASC_EU_BulbPURP:DefaultLightbulbs {};
+	class ASC_EU_BulbREDP:DefaultLightbulbs {};
+	class ASC_EU_BulbYELP:DefaultLightbulbs {};
+	class ASC_EU_BulbBLUB:DefaultLightbulbs {};
+	class ASC_EU_BulbGRNB:DefaultLightbulbs {};
+	class ASC_EU_BulbPURB:DefaultLightbulbs {};
+	class ASC_EU_BulbREDB:DefaultLightbulbs {};
+	class ASC_EU_BulbYELB:DefaultLightbulbs {};
+	};
+	class LightPoles{	//11
 	class ASC_EU_LHVIndE:DefaultLightPoles {};
 	class ASC_EU_LHVIndB:DefaultLightPoles {};
 	class ASC_EU_LHVIndZ:DefaultLightPoles {};
@@ -1148,22 +1228,190 @@ class Fuel:DefaultFuel {
 	class ASC_EU_LHVSidl1:DefaultLightPoles {};
 	class ASC_EU_LHVStre2:DefaultLightPoles {};
 	class ASC_EU_LHVStre1:DefaultLightPoles {};
-	class ASC_EU_LHVOld:DefaultLightPoles {};	
+	class ASC_EU_LHVOld:DefaultLightPoles {};
 	};
-	class Fixtures{        	//12
-	class LAND_ASC_Wall_Lamp_New:DefaultLightFixtures {};	
-	class LAND_ASC_Wall_Lamp_Old:DefaultLightFixtures {};	
-	class LAND_ASC_runway_Bluelight:DefaultLightFixtures {};	
-	class ASC_runway_BluelightB:DefaultLightFixtures {};	
-	class LAND_ASC_runway_Yellowlight:DefaultLightFixtures {};	
-	class ASC_runway_YellowlightB:DefaultLightFixtures {};	
-	class MAP_fluor_lamp:DefaultLightFixtures {};	
-	class MAP_lantern:DefaultLightFixtures {};	
-	class MAP_Light_BathRoom:DefaultLightFixtures {};	
-	class MAP_light_kitchen_03:DefaultLightFixtures {};	
-	class Misc_Wall_lamp:DefaultLightFixtures {};	
-	class Red_Light_Blinking_EP1:DefaultLightFixtures {};	
+	class Fixtures{	//12
+	class LAND_ASC_Wall_Lamp_New:DefaultLightFixtures {};
+	class LAND_ASC_Wall_Lamp_Old:DefaultLightFixtures {};
+	class LAND_ASC_runway_Bluelight:DefaultLightFixtures {};
+	class ASC_runway_BluelightB:DefaultLightFixtures {};
+	class LAND_ASC_runway_Yellowlight:DefaultLightFixtures {};
+	class ASC_runway_YellowlightB:DefaultLightFixtures {};
+	class MAP_fluor_lamp:DefaultLightFixtures {};
+	class MAP_lantern:DefaultLightFixtures {};
+	class MAP_Light_BathRoom:DefaultLightFixtures {};
+	class MAP_light_kitchen_03:DefaultLightFixtures {};
+	class Misc_Wall_lamp:DefaultLightFixtures {};
+	class Red_Light_Blinking_EP1:DefaultLightFixtures {};
 	};
-		
+
+	//Transportatation
+	// 137
+	class RoadsAsphalt1 { //15
+	  class MAP_asf1_0_2000:DefaultRoad {};
+	  class MAP_asf1_1_1000:DefaultRoad {};
+	  class MAP_asf1_10_100:DefaultRoad {};
+	  class MAP_asf1_10_25:DefaultRoad {};
+	  class MAP_asf1_10_50:DefaultRoad {};
+	  class MAP_asf1_10_75:DefaultRoad {};
+	  class MAP_asf1_12:DefaultRoad {};
+	  class MAP_asf1_15_75:DefaultRoad {};
+	  class MAP_asf1_22_50:DefaultRoad {};
+	  class MAP_asf1_25:DefaultRoad {};
+	  class MAP_asf1_30_25:DefaultRoad {};
+	  class MAP_asf1_6:DefaultRoad {};
+	  class MAP_asf1_60_10:DefaultRoad {};
+	  class MAP_asf1_6konec:DefaultRoad {};
+	  class MAP_asf1_7_100:DefaultRoad {};
+	};
+	class RoadsAsphalt2 { //15
+	  class MAP_asf2_0_2000:DefaultRoad {};
+	  class MAP_asf2_1_1000:DefaultRoad {};
+	  class MAP_asf2_10_100:DefaultRoad {};
+	  class MAP_asf2_10_25:DefaultRoad {};
+	  class MAP_asf2_10_50:DefaultRoad {};
+	  class MAP_asf2_10_75:DefaultRoad {};
+	  class MAP_asf2_12:DefaultRoad {};
+	  class MAP_asf2_15_75:DefaultRoad {};
+	  class MAP_asf2_22_50:DefaultRoad {};
+	  class MAP_masf2_25:DefaultRoad {};
+	  class MAP_asf2_30_25:DefaultRoad {};
+	  class MAP_asf2_6:DefaultRoad {};
+	  class MAP_asf2_60_10:DefaultRoad {};
+	  class MAP_asf2_6konec:DefaultRoad {};
+	  class MAP_asf2_7_100:DefaultRoad {};
+	};
+	class RoadsAsphalt3 { //15
+	  class MAP_asf3_0_2000:DefaultRoad {};
+	  class MAP_asf3_1_1000:DefaultRoad {};
+	  class MAP_asf3_10_100:DefaultRoad {};
+	  class MAP_asf3_10_25:DefaultRoad {};
+	  class MAP_asf3_10_50:DefaultRoad {};
+	  class MAP_asf3_10_75:DefaultRoad {};
+	  class MAP_asf3_12:DefaultRoad {};
+	  class MAP_asf3_15_75:DefaultRoad {};
+	  class MAP_asf3_22_50:DefaultRoad {};
+	  class MAP_asf3_25:DefaultRoad {};
+	  class MAP_asf3_30_25:DefaultRoad {};
+	  class MAP_asf3_6:DefaultRoad {};
+	  class MAP_asf3_60_10:DefaultRoad {};
+	  class MAP_asf3_6konec:DefaultRoad {};
+	  class MAP_asf3_7_100:DefaultRoad {};
+	};
+	class RoadsGravel { //15
+	  class MAP_mud_0_2000:DefaultRoad {};
+	  class MAP_mud_1_1000:DefaultRoad {};
+	  class MAP_mud_10_100:DefaultRoad {};
+	  class MAP_mud_10_25:DefaultRoad {};
+	  class MAP_mud_10_50:DefaultRoad {};
+	  class MAP_mud_10_75:DefaultRoad {};
+	  class MAP_mud_12:DefaultRoad {};
+	  class MAP_mud_15_75:DefaultRoad {};
+	  class MAP_mud_22_50:DefaultRoad {};
+	  class MAP_mud_25:DefaultRoad {};
+	  class MAP_mud_30_25:DefaultRoad {};
+	  class MAP_mud_6:DefaultRoad {};
+	  class MAP_mud_60_10:DefaultRoad {};
+	  class MAP_mud_6konec:DefaultRoad {};
+	  class MAP_mud_7_100:DefaultRoad {};
+	};
+	class RoadsIntersect { //19
+	  class MAP_kr_t_asf1_asf2:DefaultRoadPaved {};
+	  class MAP_kr_t_asf1_asf3:DefaultRoadPaved {};
+	  class MAP_kr_t_asf1_city:DefaultRoadPaved {};
+	  class MAP_kr_t_asf2_asf2:DefaultRoadPaved {};
+	  class MAP_kr_t_asf2_asf3:DefaultRoadPaved {};
+	  class MAP_kr_t_asf3_asf2:DefaultRoadPaved {};
+	  class MAP_kr_t_asf3_asf3:DefaultRoadPaved {};
+	  class MAP_kr_t_asf3_grav:DefaultRoadPaved {};
+	  class MAP_kr_t_asf3_mud:DefaultRoadPaved {};
+	  class MAP_kr_t_city_asf3:DefaultRoadPaved {};
+	  class MAP_kr_t_city_city:DefaultRoadPaved {};
+	  class MAP_kr_t_mud_mud:DefaultRoadPaved {};
+	  class MAP_kr_x_asf1_asf3:DefaultRoadPaved {};
+	  class MAP_kr_x_asf1_city:DefaultRoadPaved {};
+	  class MAP_kr_x_asf2_asf3:DefaultRoadPaved {};
+	  class MAP_kr_x_asf2_city:DefaultRoadPaved {};
+	  class MAP_kr_x_city_asf3:DefaultRoadPaved {};
+	  class MAP_kr_x_city_city:DefaultRoadPaved {};
+	  class MAP_kr_x_city_city_asf3:DefaultRoadPaved {};
+	};
+	class RoadsMud { //15
+	  class MAP_grav_0_2000:DefaultRoad {};
+	  class MAP_grav_1_1000:DefaultRoad {};
+	  class MAP_grav_10_100:DefaultRoad {};
+	  class MAP_grav_10_25:DefaultRoad {};
+	  class MAP_grav_10_50:DefaultRoad {};
+	  class MAP_grav_10_75:DefaultRoad {};
+	  class MAP_grav_12:DefaultRoad {};
+	  class MAP_grav_15_75:DefaultRoad {};
+	  class MAP_grav_22_50:DefaultRoad {};
+	  class MAP_grav_25:DefaultRoad {};
+	  class MAP_grav_30_25:DefaultRoad {};
+	  class MAP_grav_6:DefaultRoad {};
+	  class MAP_grav_60_10:DefaultRoad {};
+	  class MAP_grav_6konec:DefaultRoad {};
+	  class MAP_grav_7_100:DefaultRoad {};
+	};
+	class RoadsPaved { //15
+	  class MAP_city_0_2000:DefaultRoadPaved {};
+	  class MAP_city_1_1000:DefaultRoadPaved {};
+	  class MAP_city_10_100:DefaultRoadPaved {};
+	  class MAP_city_10_25:DefaultRoadPaved {};
+	  class MAP_city_10_50:DefaultRoadPaved {};
+	  class MAP_city_10_75:DefaultRoadPaved {};
+	  class MAP_city_12:DefaultRoadPaved {};
+	  class MAP_city_15_75:DefaultRoadPaved {};
+	  class MAP_city_22_50:DefaultRoadPaved {};
+	  class MAP_city_25:DefaultRoadPaved {};
+	  class MAP_city_30_25:DefaultRoadPaved {};
+	  class MAP_city_6:DefaultRoadPaved {};
+	  class MAP_city_60_10:DefaultRoadPaved {};
+	  class MAP_city_6konec:DefaultRoadPaved {};
+	  class MAP_city_7_100:DefaultRoadPaved {};
+	};
+	class RoadsRunways { //21
+	  class MAP_runway_beton:DefaultRunway {};
+	  class MAP_runway_beton_end1:DefaultRunway {};
+	  class MAP_runway_beton_end2:DefaultRunway {};
+	  class MAP_runway_dirt_1:DefaultRunway {};
+	  class MAP_runway_dirt_2:DefaultRunway {};
+	  class MAP_runway_dirt_3:DefaultRunway {};
+	  class MAP_runway_end15:DefaultRunway {};
+	  class MAP_runway_end33:DefaultRunway {};
+	  class MAP_runway_main:DefaultRunway {};
+	  class MAP_runway_main_40:DefaultRunway {};
+	  class MAP_runway_poj_draha:DefaultRunway {};
+	  class MAP_runway_poj_L_1:DefaultRunway {};
+	  class MAP_runway_poj_L_1_end:DefaultRunway {};
+	  class MAP_runway_poj_L_2:DefaultRunway {};
+	  class MAP_runway_poj_L_2_end:DefaultRunway {};
+	  class MAP_runway_poj_spoj:DefaultRunway {};
+	  class MAP_runway_poj_spoj_2:DefaultRunway {};
+	  class MAP_runway_poj_T_1:DefaultRunway {};
+	  class MAP_runway_poj_T_2:DefaultRunway {};
+	  class MAP_runwayold_40_main:DefaultRunway {};
+	  class MAP_runwayold_80_dirt:DefaultRunway {};
+	};
+	class RoadsStructures { //7
+	  class MAP_Misc_Drainage:DefaultRoad {};
+	  class MAP_bridge_asf1_25:DefaultRoad {
+	    requiredmaterials[] ={"ItemStone","ItemStone","ItemStone","ItemStone","ItemStone","ItemStone","MortarBucket","MortarBucket"};
+	    };
+	  class MAP_Bridge_stone_asf2_25:DefaultRoad {
+	    requiredmaterials[] ={"ItemStone","ItemStone","ItemStone","ItemStone","ItemStone","ItemStone","MortarBucket","MortarBucket"};
+	    };
+	  class MAP_Bridge_wood_25:DefaultRoad {
+	    requiredmaterials[] ={"ItemLog","ItemLog","PartPlankPack","PartPlywoodPack","equip_nails"};
+	    };
+	  class MAP_Dam_Barrier_40:DefaultRunway {};
+	  class MAP_Dam_Conc_20:DefaultRoad {
+	    requiredmaterials[] ={"ItemStone","ItemStone","ItemStone","ItemStone","ItemStone","ItemStone","ItemStone","ItemStone","MortarBucket","MortarBucket","MortarBucket","bulk_PartGeneric"};
+	    };
+	  class MAP_Dam_ConcP_20:DefaultRoad {
+	    requiredmaterials[] ={"ItemStone","ItemStone","ItemStone","ItemStone","ItemStone","ItemStone","ItemStone","ItemStone","MortarBucket","MortarBucket","MortarBucket","bulk_PartGeneric"};
+	    };
+	};
+
  };
-};	
+};

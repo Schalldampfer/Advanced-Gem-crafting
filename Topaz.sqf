@@ -11,6 +11,7 @@ forEach [
 "Defenses",
 "Forts",
 "Tents",
+"Communications",
 "Towers",
 "Garage",
 "Fuel",
@@ -39,20 +40,25 @@ call fnc_Load_Items;
 };
 case 3:
 {
-ComboBoxResult="Towers";
+ComboBoxResult="Communications";
 call fnc_Load_Items;
 };
 case 4:
 {
-ComboBoxResult="Garage";
+ComboBoxResult="Towers";
 call fnc_Load_Items;
 };
 case 5:
 {
-ComboBoxResult="Fuel";
+ComboBoxResult="Garage";
 call fnc_Load_Items;
 };
 case 6:
+{
+ComboBoxResult="Fuel";
+call fnc_Load_Items;
+};
+case 7:
 {
 ComboBoxResult="MountedWeapons";
 call fnc_Load_Items;

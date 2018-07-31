@@ -1,6 +1,6 @@
 GlobalPreviewVariable=0;
 
-
+// ESC
 DZE_cancelBuilding = false;
 
 _lbIndex=lbCurSel 3901;
@@ -44,7 +44,7 @@ if(_lbText!="") then {
 				_camera camPreparePos _coords;
 				_camera camCommitPrepared 0.3;
 				waitUntil {camCommitted _camera};
-				if (DZE_cancelBuilding) then {GlobalPreviewVariable = 1;};
+				if (DZE_cancelBuilding) then {GlobalPreviewVariable = 1;}; // ESC
 			};
 
 

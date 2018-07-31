@@ -6,7 +6,6 @@ GlobalCraftingVariable = 1;
 GlobalComboboxVariable = 99;
 ComboBoxResult="";
 
-
 {_index = lbAdd [_comboBox, _x]; } 
 forEach [
 "Billboards",

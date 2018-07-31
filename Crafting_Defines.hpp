@@ -87,7 +87,7 @@
 #define MB_BUTTON_OK      1
 #define MB_BUTTON_CANCEL  2
 #define MB_BUTTON_USER    4
-/*
+
 class RscButton
 {
 	access = 0;
@@ -119,7 +119,7 @@ class RscButton
 	offsetPressedY = 0.002;
 	borderSize = 0;
 };
-*/
+
 class RscListBox
 {
 	access = 0;
@@ -160,20 +160,20 @@ class RscListBox
 	autoScrollDelay = 5;
 	autoScrollRewind = 0;
 };
-/*
+
 class RscFrame
 {
-type = CT_STATIC;
-idc = -1;
-style = 64;
-shadow = 2;
-colorBackground[] = {0,0,0,0};
-colorText[] = {1,1,1,1};
-font = "Zeppelin32";
-sizeEx = 0.02;
-text = "";
+	type = CT_STATIC;
+	idc = -1;
+	style = 64;
+	shadow = 2;
+	colorBackground[] = {0,0,0,0};
+	colorText[] = {1,1,1,1};
+	font = "Zeppelin32";
+	sizeEx = 0.02;
+	text = "";
 };
-*/
+
 class RscBackground
 {
 	type = 0;
