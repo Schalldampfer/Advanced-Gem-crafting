@@ -54,6 +54,7 @@ And, in `DayZ_Epoch_XX.Map\description.ext`
 	#include "Custom\Buildables\zCraft\zCraft.hpp"
 ```
 5. Do some jobs for dismantling: by @Arstan13
+
 This step will allow your players to remove items they craft just like they can currently remove Epoch items. If they die, they will no longer be able to remove them. 
  
 open `fn_selfActions.sqf` find 
