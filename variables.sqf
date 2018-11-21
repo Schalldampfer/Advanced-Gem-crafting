@@ -98,3 +98,31 @@ _CraftingArray = _Amethyst + _Citrine + _Emerald + _Lights + _Obsidian + _Ruby +
 DayZ_SafeObjects = DayZ_SafeObjects + _CraftingArray;
 DZE_maintainClasses = DZE_maintainClasses + _CraftingArray;
 Custom_Buildables = _CraftingArray; 
+
+_cmbTypes = (missionConfigFile >> "Custom_Buildables" >> "Buildables");
+for "_i" from 0 to ( count _cmbTypes ) -1 do
+{
+ private ["_cmbType","_typ","_getMats","_arry"];
+ _x = _cmbTypes select _i;
+ if( isClass _x ) then {
+  _cmbType = configName _x;
+  _types = (missionConfigFile >> "Custom_Buildables" >> "Buildables" >> _cmbType);
+  for "_j" from 0 to ( count _types ) -1 do
+  {
+   _x = _types select _j; 
+   if( isClass _x ) then {
+     _typ = configName _x;
+     _getMats = getArray(missionConfigFile >> "Custom_Buildables" >> "Buildables" >> _cmbType >> _typ >> "requiredmaterials");
+     _arry = [];
+     {
+      if (_x in ["ItemTopaz","ItemObsidian","ItemSapphire","ItemAmethyst","ItemEmerald","ItemCitrine","ItemRuby"]) then {
+       _arry = _arry + [[_x,1]];
+      } else {
+       _arry = _arry + [[_x,[0,1]]];
+      };
+     } foreach _getMats;
+     DZE_modularConfig = DZE_modularConfig + [[_typ,_arry]];
+   };
+  };
+ };
+};
