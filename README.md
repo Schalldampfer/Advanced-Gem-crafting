@@ -103,3 +103,6 @@ and this into your `variables.sqf`
 s_custom_dismantle = -1;
 s_amplifier_dismantle = -1;
 ```
+
+# Add something new:
+in MT_Defines.hpp, add new classname like other classnames.
