@@ -521,18 +521,28 @@ class Custom_Buildables {
 		class Land_A_FuelStation_Feed:DefaultFuel{};
 	};
 	class MountedWeapons:DefaultMountedWeapons {
+	class BAF_GPMG_Minitripod_D:DefaultMountedWeapons{
+		offset[]={0,5,0};
+		requiredtools[] = {"ItemToolbox"};
+		requiredmaterials[] ={"bulk_PartGeneric","ItemTankTrap","200Rnd_762x51_M240"};
+	};
 	class M2StaticMG:DefaultMountedWeapons{
-		offset[]={0,7,0};
+		offset[]={0,6,1};
 		requiredtools[] = {"ItemToolbox"};
 		requiredmaterials[] ={"bulk_PartGeneric","bulk_ItemTankTrap","100Rnd_127x99_M2"};
 	};
+	class BAF_L2A1_Tripod_W:DefaultMountedWeapons{
+		offset[]={0,6,1};
+		requiredtools[] = {"ItemToolbox"};
+		requiredmaterials[] ={"bulk_PartGeneric","bulk_ItemTankTrap","100Rnd_127x99_M2","Attachment_ACOG"};
+	};
 	class KORD_high:DefaultMountedWeapons{
-		offset[]={0,7,0};
+		offset[]={0,6,1.5};
 		requiredtools[] = {"ItemToolbox"};
 		requiredmaterials[] ={"bulk_PartGeneric","bulk_ItemTankTrap","50Rnd_127x108_KORD"};
 	};
 	class DSHKM_RU:DefaultMountedWeapons{
-		offset[]={0,7,0};
+		offset[]={0,6,1};
 		requiredtools[] = {"ItemToolbox"};
 		requiredmaterials[] ={"bulk_PartGeneric","bulk_ItemTankTrap","50Rnd_127x107_DSHKM"};
 	};
@@ -542,27 +552,27 @@ class Custom_Buildables {
 		requiredmaterials[] ={"bulk_PartGeneric","bulk_ItemTankTrap","ItemPole","PG9_AT"};
 	};
 	class Stinger_Pod:DefaultMountedWeapons {
-		offset[]={0,8,0};
+		offset[]={0,6,1.5};
 		requiredtools[] = {"ItemToolbox"};
-		requiredmaterials[] ={"bulk_PartGeneric","bulk_ItemTankTrap","ItemPole","ItemPole","Stinger","Stinger"};
+		requiredmaterials[] ={"bulk_PartGeneric","bulk_ItemTankTrap","ItemPole","ItemPole","PartGlass","Stinger","Stinger"};
 	};
 	class Igla_AA_pod_TK_EP1:DefaultMountedWeapons {
-		offset[]={0,8,0};
+		offset[]={0,6,1.5};
 		requiredtools[] = {"ItemToolbox"};
 		requiredmaterials[] ={"bulk_PartGeneric","bulk_ItemTankTrap","ItemPole","ItemPole","Igla","Igla"};
 	};
 	class M252:DefaultMountedWeapons {
-		offset[]={0,4,1};
+		offset[]={0,4,1.5};
 		requiredtools[] = {"ItemToolbox","ItemEtool"};
 		requiredmaterials[] ={"ItemTopaz","bulk_PartGeneric","bulk_ItemTankTrap","ItemPole","equip_nails","OG9_HE"};
 	};
 	class D30_CDF:DefaultMountedWeapons {
-		offset[]={0,8,0};
+		offset[]={0,8,1.5};
 		requiredtools[] = {"ItemToolbox","ItemEtool","ItemCrowbar","ItemSledge"};
 		requiredmaterials[] ={"ItemTopaz","ItemPole","ItemPole","ItemPole","ItemPole","bulk_PartGeneric","bulk_ItemTankTrap","bulk_ItemTankTrap","OG9_HE","OG9_HE","OG9_HE","OG9_HE"};
 	};
 	class SearchLight_US_EP1:DefaultMountedWeapons {
-		offset[]={0,6,0};
+		offset[]={0,6,1.5};
 		requiredtools[] = {"ItemToolbox"};
 		requiredmaterials[] ={"ItemLightBulb","PartGlass","ItemGenerator","ItemPole","ItemPole","ItemPole","ItemPole"};
 	};
