@@ -10,7 +10,7 @@ Cleaned up a lot of old code that wasn't needed any more for this custom craftin
 Removed irrelevant variables from private block
 This file is called with zero parameters
 */
-private ["_AdminCraft","_HM_temp","_HT_temp","_IsNearPlot","_RM_temp","_RT_temp","_activatingPlayer","_buildcheck","_canBuild","_canBuildOnPlot","_canDo","_cancel","_charID","_classname","_counter","_dir","_distance","_exitWith","_found","_friendlies","_hasMaterials","_hasTools","_hasmaterials","_hastools","_helperColor","_inVehicle","_isAllowedUnderGround","_isOk","_isfriendly","_isowner","_lbIndex","_location","_location1","_location2","_mags","_message","_nearestPole","_needText","_objHDiff","_object","_objectHelper","_objectHelperDir","_objectHelperPos","_offset","_onLadder","_ownerID","_playerUID","_plotcheck","_position","_reason","_requiredmaterials","_requiredtools","_requireplot","_rotate","_text","_tmp_Pos","_tmpbuilt","_vehicle","_weaps","_zheightchanged","_zheightdirection"];
+private ["_AdminCraft","_HM_temp","_HT_temp","_IsNearPlot","_RM_temp","_RT_temp","_activatingPlayer","_buildcheck","_canBuild","_canBuildOnPlot","_canDo","_cancel","_charID","_classname","_counter","_dir","_distance","_exitWith","_found","_friendlies","_hasMaterials","_hasTools","_hasmaterials","_hastools","_helperColor","_inVehicle","_isAllowedUnderGround","_isOk","_isfriendly","_isowner","_lbIndex","_location","_location1","_location2","_mags","_message","_nearestPole","_needText","_objHDiff","_object","_objectHelper","_objectHelperDir","_objectHelperPos","_offset","_onLadder","_ownerID","_playerUID","_plotcheck","_position","_reason","_requiredmaterials","_requiredtools","_requireplot","_rotate","_text","_tmp_Pos","_tmpbuilt","_vehicle","_weaps","_zheightchanged","_zheightdirection","_finished"];
 
 _AdminCraft=false;
 
@@ -440,6 +440,22 @@ if(!canbuild) then { _cancel = true; _reason = format[localize "STR_EPOCH_PLAYER
 
 if(!_cancel) then {
 
+	[player,"repair",0,false,10] call dayz_zombieSpeak;
+	[player,10,true,(getPosATL player)] spawn player_alertZombies;
+
+	_finished = ["Medic",1,{player getVariable["combattimeout",0] >= diag_tickTime or DZE_cancelBuilding}] call fn_loopAction;
+
+	if (!_finished) exitWith {
+		format[localize "str_epoch_player_47",_text,_reason] call dayz_rollingMessages;
+		dayz_actionInProgress = false;
+		if(!_AdminCraft) then {
+			{
+				//Since player had items removed we need to give them back
+				player addMagazine _x;
+			} foreach _RM_temp;
+		};
+	};
+
 	// Start Build
 	_tmpbuilt = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
 
@@ -451,10 +467,6 @@ if(!_cancel) then {
 	_tmpbuilt setPosATL _location;
 
 	format[localize "str_epoch_player_138",_text] call dayz_rollingMessages;
-
-	player playActionNow "Medic";
-	[player,"repair",0,false,10] call dayz_zombieSpeak;
-	[player,10,true,(getPosATL player)] spawn player_alertZombies;
 
 	format[localize "str_build_01",_text] call dayz_rollingMessages;
 
