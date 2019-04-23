@@ -479,8 +479,7 @@ if(!_cancel) then {
 } else {
 	format[localize "str_epoch_player_47",_text,_reason] call dayz_rollingMessages;
 	dayz_actionInProgress = false;
-	if(_AdminCraft) then {
-	} else {
+	if(!_AdminCraft) then {
 		{
 			//Since player had items removed we need to give them back
 			player addMagazine _x;
