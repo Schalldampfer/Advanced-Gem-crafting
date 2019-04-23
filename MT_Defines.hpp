@@ -252,7 +252,7 @@ class Custom_Buildables {
 		requiredmaterials[] ={"ItemFuelBarrel","ItemFuelBarrel","bulk_PartGeneric","bulk_PartGeneric","ItemGenerator"};
 	};
 	class DefaultMountedWeapons:Default {
-		offset[]={0,7,0};
+		offset[]={0,5,1};
 		requiredtools[] = {"ItemToolbox"};
 		requiredmaterials[] ={"bulk_PartGeneric","bulk_ItemTankTrap","100Rnd_762x51_M240"};
 	};
@@ -270,6 +270,16 @@ class Custom_Buildables {
 		offset[]={0,3,0};
 		requiredtools[] = {"ItemSledge","ItemPickaxe","ItemEtool"};
 		requiredmaterials[] = {"ItemStone","ItemStone","ItemStone","ItemStone","ItemStone","MortarBucket","MortarBucket","bulk_PartGeneric"};
+	};
+	class DefaultRoadStructure:Default {
+		offset[]={0,12,5};
+		requiredtools[] = {"ItemSledge","ItemPickaxe","ItemEtool"};
+		requiredmaterials[] = {"ItemStone","ItemStone","MortarBucket","PartGeneric"};
+	};
+	class DefaultCncBlock:Default {
+		offset[]={0,3,0.4};
+		requiredtools[] = {"ItemToolbox","ItemEtool","ItemCrowbar"};
+		requiredmaterials[] ={"CinderBlocks","MortarBucket","PartGeneric"};
 	};
 
 	//Topaz - Base Defense
@@ -522,57 +532,79 @@ class Custom_Buildables {
 	};
 	class MountedWeapons:DefaultMountedWeapons {
 	class BAF_GPMG_Minitripod_D:DefaultMountedWeapons{
-		offset[]={0,5,0};
+		offset[]={0,4,0};
 		requiredtools[] = {"ItemToolbox"};
 		requiredmaterials[] ={"bulk_PartGeneric","ItemTankTrap","200Rnd_762x51_M240"};
 	};
 	class M2StaticMG:DefaultMountedWeapons{
-		offset[]={0,6,1};
+		offset[]={0,4,1};
 		requiredtools[] = {"ItemToolbox"};
 		requiredmaterials[] ={"bulk_PartGeneric","bulk_ItemTankTrap","100Rnd_127x99_M2"};
 	};
 	class BAF_L2A1_Tripod_W:DefaultMountedWeapons{
-		offset[]={0,6,1};
+		offset[]={0,4,1};
 		requiredtools[] = {"ItemToolbox"};
 		requiredmaterials[] ={"bulk_PartGeneric","bulk_ItemTankTrap","100Rnd_127x99_M2","Attachment_ACOG"};
 	};
 	class KORD_high:DefaultMountedWeapons{
-		offset[]={0,6,1.5};
+		offset[]={0,4,1.5};
 		requiredtools[] = {"ItemToolbox"};
 		requiredmaterials[] ={"bulk_PartGeneric","bulk_ItemTankTrap","50Rnd_127x108_KORD"};
 	};
 	class DSHKM_RU:DefaultMountedWeapons{
-		offset[]={0,6,1};
+		offset[]={0,4,1};
 		requiredtools[] = {"ItemToolbox"};
 		requiredmaterials[] ={"bulk_PartGeneric","bulk_ItemTankTrap","50Rnd_127x107_DSHKM"};
 	};
+	class AGS_CDF:DefaultMountedWeapons{
+		offset[]={0,4,1};
+		requiredtools[] = {"ItemToolbox"};
+		requiredmaterials[] ={"bulk_PartGeneric","bulk_ItemTankTrap","29Rnd_30mm_AGS30","Attachment_PSO1"};
+	};
+	class MK19_TriPod:DefaultMountedWeapons{
+		offset[]={0,4,1};
+		requiredtools[] = {"ItemToolbox"};
+		requiredmaterials[] ={"bulk_PartGeneric","bulk_ItemTankTrap","48Rnd_40mm_MK19"};
+	};
+/*
+	class ZU23_Ins:DefaultMountedWeapons {
+		offset[]={0,8,1};
+		requiredtools[] = {"ItemToolbox","ItemEtool","ItemCrowbar","ItemSledge"};
+		requiredmaterials[] ={"ItemTopaz","ItemPole","ItemPole","ItemPole","ItemPole","bulk_PartGeneric","bulk_ItemTankTrap","bulk_ItemTankTrap","29Rnd_30mm_AGS30","29Rnd_30mm_AGS30","29Rnd_30mm_AGS30","Attachment_SCOPED"};
+	};
+*/
 	class SPG9_CDF:DefaultMountedWeapons {
-		offset[]={0,6,0};
+		offset[]={0,5,0};
 		requiredtools[] = {"ItemToolbox"};
 		requiredmaterials[] ={"bulk_PartGeneric","bulk_ItemTankTrap","ItemPole","PG9_AT"};
 	};
+	class Metis:DefaultMountedWeapons {
+		offset[]={0,4,1};
+		requiredtools[] = {"ItemToolbox","ItemCrowbar"};
+		requiredmaterials[] ={"bulk_PartGeneric","bulk_ItemTankTrap","ItemPole","ItemPole","PartGlass","AT13"};
+	};
 	class Stinger_Pod:DefaultMountedWeapons {
 		offset[]={0,6,1.5};
-		requiredtools[] = {"ItemToolbox"};
+		requiredtools[] = {"ItemToolbox","ItemCrowbar"};
 		requiredmaterials[] ={"bulk_PartGeneric","bulk_ItemTankTrap","ItemPole","ItemPole","PartGlass","Stinger","Stinger"};
 	};
 	class Igla_AA_pod_TK_EP1:DefaultMountedWeapons {
 		offset[]={0,6,1.5};
-		requiredtools[] = {"ItemToolbox"};
+		requiredtools[] = {"ItemToolbox","ItemCrowbar"};
 		requiredmaterials[] ={"bulk_PartGeneric","bulk_ItemTankTrap","ItemPole","ItemPole","Igla","Igla"};
 	};
 	class M252:DefaultMountedWeapons {
 		offset[]={0,4,1.5};
-		requiredtools[] = {"ItemToolbox","ItemEtool"};
+		requiredtools[] = {"ItemToolbox","ItemEtool","CDF_dogtags"};
 		requiredmaterials[] ={"ItemTopaz","bulk_PartGeneric","bulk_ItemTankTrap","ItemPole","equip_nails","OG9_HE"};
 	};
 	class D30_CDF:DefaultMountedWeapons {
 		offset[]={0,8,1.5};
-		requiredtools[] = {"ItemToolbox","ItemEtool","ItemCrowbar","ItemSledge"};
-		requiredmaterials[] ={"ItemTopaz","ItemPole","ItemPole","ItemPole","ItemPole","bulk_PartGeneric","bulk_ItemTankTrap","bulk_ItemTankTrap","OG9_HE","OG9_HE","OG9_HE","OG9_HE"};
+		requiredtools[] = {"ItemToolbox","ItemEtool","ItemCrowbar","ItemSledge","CDF_dogtags"};
+		requiredmaterials[] ={"ItemTopaz","ItemPole","ItemPole","ItemPole","ItemPole","bulk_PartGeneric","bulk_ItemTankTrap","bulk_ItemTankTrap","OG9_HE","OG9_HE","OG9_HE","Attachment_SCOPED"};
 	};
 	class SearchLight_US_EP1:DefaultMountedWeapons {
-		offset[]={0,6,1.5};
+		offset[]={0,4,0};
 		requiredtools[] = {"ItemToolbox"};
 		requiredmaterials[] ={"ItemLightBulb","PartGlass","ItemGenerator","ItemPole","ItemPole","ItemPole","ItemPole"};
 	};
@@ -672,7 +704,14 @@ class Custom_Buildables {
 	class MAP_popelnice:DefaultEmerald {};
 	class Haystack_small:DefaultEmerald {};
 	class Land_cages_EP1:DefaultEmerald {};
-	class Land_Campfire_burning:DefaultEmerald {};
+	class Land_Campfire_burning:DefaultEmerald {
+		offset[]={0,3,0.3};
+		requiredmaterials[] ={"ItemGoldBar10oz","ItemGoldBar10oz","PartWoodPile","ItemStone"};
+	};
+	class Land_Fire_barrel_burning:DefaultEmerald {
+		offset[]={0,3,0.5};
+		requiredmaterials[] ={"ItemGoldBar10oz","ItemGoldBar10oz","ItemFuelBarrel","PartWoodPile","PartWoodPile","PartWoodPile","PartWoodPile"};
+	};
 	class Land_transport_cart_EP1:DefaultEmerald {};
 	class MAP_ChickenCoop:DefaultEmerald {};
 	class MAP_fire:DefaultEmerald {};
@@ -691,7 +730,14 @@ class Custom_Buildables {
 	class MAP_Piskoviste:DefaultEmerald {};
 	class MAP_Houpacka:DefaultEmerald {};
 	class MAP_brana:DefaultEmerald {};
-	class Suitcase:DefaultEmerald {};
+	class SatPhone:DefaultEmerald {
+		requiredtools[] = {"ItemRadio"};
+		requiredmaterials[] ={"ItemBriefcaseEmpty","Laserbatteries"};
+	};
+	class Suitcase:DefaultEmerald {
+		requiredtools[] = {"ItemRadio"};
+		requiredmaterials[] ={"ItemBriefcase100oz"};
+	};
 	};
 	class Scaffolding{	//3
 	class MAP_leseni2x:Default {
@@ -956,7 +1002,7 @@ class Custom_Buildables {
 	class Hanged_MD:Default {
 		offset[]={0,3,4};
 		requiredtools[] = {"ItemToolbox","ItemEtool"};
-		requiredmaterials[] ={"ItemZombieParts","ItemZombieParts","ItemCanvas"};	
+		requiredmaterials[] ={"ItemZombieParts","ItemZombieParts","ItemCanvas"};
 	};
 	class Body:Default {
 		offset[]={0,3,0};
@@ -977,6 +1023,21 @@ class Custom_Buildables {
 		offset[]={0,3,1};
 		requiredtools[] = {"ItemToolbox","ItemEtool","ItemHatchet"};
 		requiredmaterials[] ={"PartWoodLumber"};
+	};
+	class Land_Church_tomb_1:Default {
+		offset[]={0,4,1};
+		requiredtools[] = {"ItemToolbox","ItemEtool","ItemHatchet"};
+		requiredmaterials[] ={"PartWoodLumber","PartWoodLumber"};
+	};
+	class Land_Church_tomb_2:Default {
+		offset[]={0,4,1};
+		requiredtools[] = {"ItemToolbox","ItemEtool","ItemHatchet"};
+		requiredmaterials[] ={"PartWoodLumber","PartWoodLumber"};
+	};
+	class Land_Church_tomb_3:Default {
+		offset[]={0,4,1};
+		requiredtools[] = {"ItemToolbox","ItemEtool","ItemHatchet"};
+		requiredmaterials[] ={"PartWoodLumber","PartWoodLumber"};
 	};
 	class Mass_grave_DZ:Default {
 		offset[]={0,6,0};
@@ -1252,6 +1313,7 @@ class Custom_Buildables {
 	class MAP_Light_BathRoom:DefaultLightFixtures {};
 	class MAP_light_kitchen_03:DefaultLightFixtures {};
 	class Misc_Wall_lamp:DefaultLightFixtures {};
+	class Red_Light_EP1:DefaultLightFixtures {};
 	class Red_Light_Blinking_EP1:DefaultLightFixtures {};
 	};
 
@@ -1405,22 +1467,25 @@ class Custom_Buildables {
 	};
 	class RoadsStructures { //7
 	  class MAP_Misc_Drainage:DefaultRoad {};
-	  class MAP_bridge_asf1_25:DefaultRoad {
+	  class MAP_bridge_asf1_25:DefaultRoadStructure {
 	    requiredmaterials[] ={"ItemStone","ItemStone","ItemStone","ItemStone","ItemStone","ItemStone","MortarBucket","MortarBucket"};
 	    };
-	  class MAP_Bridge_stone_asf2_25:DefaultRoad {
+	  class MAP_Bridge_stone_asf2_25:DefaultRoadStructure {
 	    requiredmaterials[] ={"ItemStone","ItemStone","ItemStone","ItemStone","ItemStone","ItemStone","MortarBucket","MortarBucket"};
 	    };
-	  class MAP_Bridge_wood_25:DefaultRoad {
+	  class MAP_Bridge_wood_25:DefaultRoadStructure {
 	    requiredmaterials[] ={"ItemLog","ItemLog","PartPlankPack","PartPlywoodPack","equip_nails"};
 	    };
-	  class MAP_Dam_Barrier_40:DefaultRunway {};
-	  class MAP_Dam_Conc_20:DefaultRoad {
+	  class MAP_Dam_Barrier_40:DefaultRoadStructure {};
+	  class MAP_Dam_Conc_20:DefaultRoadStructure {
 	    requiredmaterials[] ={"ItemStone","ItemStone","ItemStone","ItemStone","ItemStone","ItemStone","ItemStone","ItemStone","MortarBucket","MortarBucket","MortarBucket","bulk_PartGeneric"};
 	    };
-	  class MAP_Dam_ConcP_20:DefaultRoad {
+	  class MAP_Dam_ConcP_20:DefaultRoadStructure {
 	    requiredmaterials[] ={"ItemStone","ItemStone","ItemStone","ItemStone","ItemStone","ItemStone","ItemStone","ItemStone","MortarBucket","MortarBucket","MortarBucket","bulk_PartGeneric"};
 	    };
+	  class MAP_CncBlock:DefaultCncBlock {};
+	  class MAP_CncBlock_D:DefaultCncBlock {};
+	  class MAP_CncBlock_stripes:DefaultCncBlock {};
 	};
 
  };
