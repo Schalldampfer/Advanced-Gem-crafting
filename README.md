@@ -104,18 +104,5 @@ s_custom_dismantle = -1;
 s_amplifier_dismantle = -1;
 ```
 
-6. Server-side Edit for Static Weapons:
-
-If you want static weapons unlocked after restart, edit `dayz_server\system\server_monitor.sqf`
-
-find
-```sqf
-				if (_ownerID != "0" && {!(_object isKindOf "Bicycle")}) then {_object setVehicleLock "locked";};
-```
-and replace with
-```sqf
-				if (_ownerID != "0" && {!(_object isKindOf "Bicycle")} && {!(_object isKindOf "StaticWeapon")}) then {_object setVehicleLock "locked";};
-```
-
 # Add something new:
 in MT_Defines.hpp, add new classname like other classnames.

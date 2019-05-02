@@ -47,13 +47,11 @@ for "_i" from 0 to ( count _cmbTypes ) -1 do
      } foreach _getMats;
      DZE_modularConfig = DZE_modularConfig + [[_typ,_arry]];
      Custom_Buildables = Custom_Buildables + [_typ];
-     if (!(_typ isKindOf "AllVehicles")) then {
-       DayZ_SafeObjects = DayZ_SafeObjects + [_typ];
-     };
    };
   };
  };
 };
 
+DayZ_SafeObjects = DayZ_SafeObjects + Custom_Buildables;
 DZE_maintainClasses = DZE_maintainClasses + Custom_Buildables;
 //{ diag_log format["Item in DZE_modularConfig : %1",_x];} foreach DZE_modularConfig;
