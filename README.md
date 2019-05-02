@@ -56,53 +56,16 @@ And, in `DayZ_Epoch_XX.Map\description.ext`
 5. Do some jobs for dismantling: by @Arstan13
 
 This step will allow your players to remove items they craft just like they can currently remove Epoch items. If they die, they will no longer be able to remove them. 
- 
-open `fn_selfActions.sqf` find 
-```sqf
-_isModular = _cursorTarget isKindOf "ModularItems";
-```
-and change that entire line to:
-```sqf
-_isModular = (_cursorTarget isKindOf "ModularItems") or ((typeOf _cursorTarget) in Custom_Buildables);
-```
-add this code
-```sqf
-  if ((_typeOfCursorTarget in Custom_Buildables) && (player distance _cursorTarget <= 5) && {speed player <= 1} && (_canDo)) then {
-		_hasAccess = [player, _cursorTarget] call FNC_check_access; //checks if player has rights to object
-		_allowed = ((_hasAccess select 0) || (_hasAccess select 2) || (_hasAccess select 3) || (_hasAccess select 4)); //returns values from fn_checkAccess of [_player, _isOwner, _isFriendly, _isPlotOwner]
-		if ((s_custom_dismantle < 0) && (_allowed || (_hasAccess select 1))) then {
-			s_custom_dismantle = player addAction [("<t color=""#FF0000"">"+("Dismantle Object") + "</t>"), "scripts\buildables\dismantle.sqf",_cursorTarget, 3, true, true];
-		};
-	} else {
-		player removeAction s_custom_dismantle;
-		s_custom_dismantle = -1;
-	};
-  
-  if (_typeOfCursorTarget == "Plastic_Pole_EP1_DZ" && {speed player <= 1}) then {
-		_hasAccess = [player, _cursorTarget] call FNC_check_access; //checks if player has rights to object
-		_allowed = ((_hasAccess select 0) || (_hasAccess select 2) || (_hasAccess select 3) || (_hasAccess select 4)); //returns values from fn_checkAccess of [_player, _isOwner, _isFriendly, _isPlotOwner]
-		if ((s_amplifier_dismantle < 0) && (_allowed || (_hasAccess select 1))) then {
-			s_amplifier_dismantle = player addAction [("<t color=""#b7b7b5"">"+("Dismantle Amplifier") + "</t>"), "scripts\buildables\ampDismantle.sqf",_cursorTarget, 3, true, true];
-		};
-	} else {
-		player removeAction s_amplifier_dismantle;
-		s_amplifier_dismantle = -1;
-	};
-```
-above tame dogs code to use the custom dismantle script for all the buildables
 
-this goes in the self_action resets in `fn_selfActions.sqf`
+In `dayz_code\compiles\fn_selfActions.sqf`, find 
 ```sqf
-player removeAction s_custom_dismantle; //buildables dismantle
-s_custom_dismantle = -1;
-player removeAction s_amplifier_dismantle;
-s_amplifier_dismantle = -1;
+    if ((damage _cursorTarget >= DZE_DamageBeforeMaint) && {_cursorTarget isKindOf "ModularItems" || _cursorTarget isKindOf "DZE_Housebase" || _cursorTarget isKindOf "BuiltItems" || _cursorTarget isKindOf "DZ_buildables" || _typeOfCursorTarget == "LightPole_DZ"}) then {
 ```
-and this into your `variables.sqf`
+and replace with this line:
 ```sqf
-s_custom_dismantle = -1;
-s_amplifier_dismantle = -1;
+    if ((damage _cursorTarget >= DZE_DamageBeforeMaint) && {_cursorTarget isKindOf "ModularItems" || _cursorTarget isKindOf "DZE_Housebase" || _cursorTarget isKindOf "BuiltItems" || _cursorTarget isKindOf "DZ_buildables" || _typeOfCursorTarget == "LightPole_DZ" || _typeOfCursorTarget in DZE_maintainClasses}) then {
 ```
+This will activate some more missing maintainance menu for objects like Workbench and so on.
 
 # Add something new:
 in MT_Defines.hpp, add new classname like other classnames.
