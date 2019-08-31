@@ -2,13 +2,6 @@ class Custom_Buildables {
 	class Buildables{
 	class Default {
 		//This is a list of tools and materials used below if you wish to make new classes or edit ones already here
-		//
-		//,"ItemHatchet","ItemToolbox","ItemCrowbar","ItemKnife","ItemEtool","ItemSledge"
-		//,"bulk_ItemSandbag","bulk_PartGeneric","PartPlankPack","PartPlywoodPack","CinderBlocks","MortarBucket"
-		//,"PartFueltank","PartWoodPile","PartGlass","ItemFuelBarrel","ItemPole","metal_panel_kit","PartWoodLumber"
-		//,"ItemCanvas","ItemBurlap","ItemZombieParts","ItemSandbagExLarge","ItemSandbagExLarge5x","PartGeneric"
-		//,"ItemTankTrap","ItemWire"
-		//,"desert_large_net_kit","forest_large_net_kit"
 		offset[]={0,3,0};
 		requiredtools[] = {};
 		requiredmaterials[] ={};
@@ -247,7 +240,7 @@ class Custom_Buildables {
 		requiredmaterials[] ={"CinderBlocks","CinderBlocks","CinderBlocks","CinderBlocks","MortarBucket","MortarBucket","ItemTankTrap","ItemTankTrap"};
 	};
 	class DefaultFuel:Default {
-		offset[]={0,7,0};
+		offset[]={0,7,1};
 		requiredtools[] = {"ItemToolbox","ItemEtool","ItemCrowbar"};
 		requiredmaterials[] ={"ItemFuelBarrel","ItemFuelBarrel","bulk_PartGeneric","bulk_PartGeneric","ItemGenerator"};
 	};
@@ -495,6 +488,11 @@ class Custom_Buildables {
 			requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemSledge"};
 			requiredmaterials[] ={"full_cinder_wall_kit","full_cinder_wall_kit","full_cinder_wall_kit","full_cinder_wall_kit","bulk_PartGeneric","MortarBucket","MortarBucket"};
 		};
+		class Land_MBG_ATC_Tower:Default {
+			offset[]={0,5,4};
+			requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemSledge"};
+			requiredmaterials[] ={"full_cinder_wall_kit","full_cinder_wall_kit","full_cinder_wall_kit","full_cinder_wall_kit","bulk_PartGeneric","MortarBucket","MortarBucket","PartGlass","PartGlass","PartGlass"};
+		};
 	};
 	class Communications {
 		class MAP_antenna_small_roof {
@@ -541,7 +539,12 @@ class Custom_Buildables {
 		requiredtools[] = {"ItemToolbox"};
 		requiredmaterials[] ={"bulk_PartGeneric","bulk_ItemTankTrap","100Rnd_127x99_M2"};
 	};
-	class BAF_L2A1_Tripod_W:DefaultMountedWeapons{
+	class BAF_L2A1_Tripod_W_NoDisassembly:DefaultMountedWeapons{
+		offset[]={0,4,1};
+		requiredtools[] = {"ItemToolbox"};
+		requiredmaterials[] ={"bulk_PartGeneric","bulk_ItemTankTrap","100Rnd_127x99_M2","Attachment_ACOG"};
+	};
+	class BAF_L2A1_Minitripod_W_NoDisassembly:DefaultMountedWeapons{
 		offset[]={0,4,1};
 		requiredtools[] = {"ItemToolbox"};
 		requiredmaterials[] ={"bulk_PartGeneric","bulk_ItemTankTrap","100Rnd_127x99_M2","Attachment_ACOG"};
@@ -566,10 +569,15 @@ class Custom_Buildables {
 		requiredtools[] = {"ItemToolbox"};
 		requiredmaterials[] ={"bulk_PartGeneric","bulk_ItemTankTrap","48Rnd_40mm_MK19"};
 	};
+	class BAF_GMG_Tripod_W_NoDisassembly:DefaultMountedWeapons{
+		offset[]={0,4,1};
+		requiredtools[] = {"ItemToolbox"};
+		requiredmaterials[] ={"bulk_PartGeneric","bulk_ItemTankTrap","32Rnd_40mm_GMG","Attachment_ACOG"};
+	};
 /*
 	class ZU23_Ins:DefaultMountedWeapons {
 		offset[]={0,8,1};
-		requiredtools[] = {"ItemToolbox","ItemEtool","ItemCrowbar","ItemSledge"};
+		requiredtools[] = {"ItemToolbox","ItemEtool","ItemCrowbar","ItemSledge","CDF_dogtags"};
 		requiredmaterials[] ={"ItemTopaz","ItemPole","ItemPole","ItemPole","ItemPole","bulk_PartGeneric","bulk_ItemTankTrap","bulk_ItemTankTrap","29Rnd_30mm_AGS30","29Rnd_30mm_AGS30","29Rnd_30mm_AGS30","Attachment_SCOPED"};
 	};
 */
@@ -594,6 +602,11 @@ class Custom_Buildables {
 		requiredmaterials[] ={"bulk_PartGeneric","bulk_ItemTankTrap","ItemPole","ItemPole","Igla","Igla"};
 	};
 	class M252:DefaultMountedWeapons {
+		offset[]={0,4,1.5};
+		requiredtools[] = {"ItemToolbox","ItemEtool","CDF_dogtags"};
+		requiredmaterials[] ={"ItemTopaz","bulk_PartGeneric","bulk_ItemTankTrap","ItemPole","equip_nails","OG9_HE"};
+	};
+	class 2b14_82mm_CDF:DefaultMountedWeapons {
 		offset[]={0,4,1.5};
 		requiredtools[] = {"ItemToolbox","ItemEtool","CDF_dogtags"};
 		requiredmaterials[] ={"ItemTopaz","bulk_PartGeneric","bulk_ItemTankTrap","ItemPole","equip_nails","OG9_HE"};
@@ -730,10 +743,6 @@ class Custom_Buildables {
 	class MAP_Piskoviste:DefaultEmerald {};
 	class MAP_Houpacka:DefaultEmerald {};
 	class MAP_brana:DefaultEmerald {};
-	class SatPhone:DefaultEmerald {
-		requiredtools[] = {"ItemRadio"};
-		requiredmaterials[] ={"ItemBriefcaseEmpty","Laserbatteries"};
-	};
 	class Suitcase:DefaultEmerald {
 		requiredtools[] = {"ItemRadio"};
 		requiredmaterials[] ={"ItemBriefcase100oz"};
@@ -798,6 +807,14 @@ class Custom_Buildables {
 	class MAP_Bilboard_volte_cernaruske_hnuti:DefaultBillboards {};
 	class MAP_Bilboard_vstup_do_CDF:DefaultBillboards {};
 	class MAP_Bilboard_zlute_zgrynda:DefaultBillboards {};
+	class Land_aif_billboard_waldbrand:DefaultBillboards {};
+	class Land_aif_billboard_perpedes:DefaultBillboards {};
+	class Land_aif_billboard_chuckiemike:DefaultBillboards {};
+	class Land_aif_billboard_zaunbau:DefaultBillboards {};
+	class Land_aif_billboard_typowy_mirek:DefaultBillboards {};
+	class Land_aif_billboard_typowy_mirek_wallmount:DefaultBillboards {};
+	class Land_aif_billboard_konzert_wallmount:DefaultBillboards {};
+	class Land_aif_billboard_kulturscheune_wallmount:DefaultBillboards {};
 	};
 	class Boards{	//7
 	class Sign_Checkpoint:DefaultBoards {};
@@ -846,6 +863,8 @@ class Custom_Buildables {
 	class RoadBarrier_long:DefaultSignsMisc {};
 	class RoadBarrier_light:DefaultSignsMisc {};
 	class Sign_tape_redwhite:DefaultRoadMisc {};
+	class MAP_buoy:DefaultSignsMisc {};
+	class MAP_buoy_small:DefaultSignsMisc {};
 	};
 	class SignsMisc{	//13
 	class MAP_rail_50km:DefaultSignsMisc {};
@@ -1009,6 +1028,16 @@ class Custom_Buildables {
 		requiredtools[] = {"ItemToolbox","ItemEtool"};
 		requiredmaterials[] ={"ItemZombieParts","ItemCanvas","ItemCanvas"};
 	};
+	class Body1:Default {
+		offset[]={0,3,0};
+		requiredtools[] = {"ItemToolbox","ItemEtool"};
+		requiredmaterials[] ={"ItemZombieParts","ItemZombieParts","Skin_Soldier1_DZ"};
+	};
+	class Body2:Default {
+		offset[]={0,3,0};
+		requiredtools[] = {"ItemToolbox","ItemEtool"};
+		requiredmaterials[] ={"ItemZombieParts","ItemZombieParts","Skin_Soldier1_DZ"};
+	};
 	class GraveCross1:Default {
 		offset[]={0,3,1};
 		requiredtools[] = {"ItemToolbox","ItemEtool","ItemHatchet"};
@@ -1060,6 +1089,7 @@ class Custom_Buildables {
 	class FlagCarrierCzechRepublic_EP1:DefaultFlag {};
 	class FlagCarrierGermany_EP1:DefaultFlag {};
 	class FlagCarrierTakistanKingdom_EP1:DefaultFlag {};
+	class FlagCarrierTakistan_EP1:DefaultFlag {};
 	class FlagCarrierRU:DefaultFlag {};
 	class FlagCarrierUSA:DefaultFlag {};
 	};
@@ -1067,6 +1097,7 @@ class Custom_Buildables {
 	class FlagCarrierCDFEnsign_EP1:DefaultFlag {};
 	class FlagCarrierCDF_EP1:DefaultFlag {};
 	class FlagCarrierINS:DefaultFlag {};
+	class FlagCarrierGUE:DefaultFlag {};
 	class FlagCarrierNATO_EP1:DefaultFlag {};
 	class FlagCarrierTFKnight_EP1:DefaultFlag {};
 	class FlagCarrierTKMilitia_EP1:DefaultFlag {};
@@ -1220,6 +1251,10 @@ class Custom_Buildables {
 	class MAP_tv_a:DefaultElectronics {};
 	class Radio:DefaultElectronics {};
 	class SmallTV:DefaultElectronics {};
+	class SatPhone:DefaultEmerald {
+		requiredtools[] = {"ItemRadio"};
+		requiredmaterials[] ={"ItemBriefcaseEmpty","Laserbatteries"};
+	};
 	};
 	class FloorCoverings{	//5
 	class Land_Blankets_EP1:DefaultFloorCoverings {};
@@ -1241,11 +1276,15 @@ class Custom_Buildables {
 	class Land_Vase_loam_2_EP1:DefaultCitrine {};
 	class Land_Vase_loam_3_EP1:DefaultCitrine {};
 	class Land_Water_pipe_EP1:DefaultCitrine {};
-	class MAP_briefcase:DefaultCitrine {};
+	class MAP_Baseball:DefaultCitrine {};
+//	class MAP_briefcase:DefaultCitrine {};
 	class MAP_bucket:DefaultCitrine {};
 	class MAP_FuelCan:DefaultCitrine {};
 	class MAP_MetalBucket:DefaultCitrine {};
 	class MAP_SmallObj_money:DefaultCitrine {};
+	class MAP_SmallObj_file_map:DefaultCitrine {};
+	class MAP_SmallObj_File_photos:DefaultCitrine {};
+	class MAP_SmallObj_moscow_docs_WPN:DefaultCitrine {};
 	class MAP_SmallObj_spukayev_docs_WPN:DefaultCitrine {};
 	class MAP_drapes:DefaultCitrine {};
 	class MAP_drapes_long:DefaultCitrine {};
@@ -1282,11 +1321,13 @@ class Custom_Buildables {
 	class ASC_EU_BulbPURP:DefaultLightbulbs {};
 	class ASC_EU_BulbREDP:DefaultLightbulbs {};
 	class ASC_EU_BulbYELP:DefaultLightbulbs {};
+	class ASC_EU_BulbWHTP:DefaultLightbulbs {};
 	class ASC_EU_BulbBLUB:DefaultLightbulbs {};
 	class ASC_EU_BulbGRNB:DefaultLightbulbs {};
 	class ASC_EU_BulbPURB:DefaultLightbulbs {};
 	class ASC_EU_BulbREDB:DefaultLightbulbs {};
 	class ASC_EU_BulbYELB:DefaultLightbulbs {};
+	class ASC_EU_BulbWHTB:DefaultLightbulbs {};
 	};
 	class LightPoles{	//11
 	class ASC_EU_LHVIndE:DefaultLightPoles {};
@@ -1300,6 +1341,7 @@ class Custom_Buildables {
 	class ASC_EU_LHVStre2:DefaultLightPoles {};
 	class ASC_EU_LHVStre1:DefaultLightPoles {};
 	class ASC_EU_LHVOld:DefaultLightPoles {};
+	class Land_MBG_NavigLight_Red:DefaultLightPoles {};
 	};
 	class Fixtures{	//12
 	class LAND_ASC_Wall_Lamp_New:DefaultLightFixtures {};
