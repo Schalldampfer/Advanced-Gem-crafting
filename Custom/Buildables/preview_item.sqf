@@ -22,6 +22,11 @@ if(_lbText!="") then {
 	_camera = "camera" camCreate [10,10,5000];
 	_camera cameraEffect ["INTERNAL","BACK"];
 	showCinemaBorder false;
+	if (sunOrMoon != 1) then {
+		camUseNVG true;
+	} else {
+		camUseNVG false;
+	};
 
 	Crafting_Object_Direction = -0.5;
 	Crafting_Object_Radius = 7;
