@@ -12,7 +12,6 @@ This file is called with zero parameters
 */
 private ["_AdminCraft","_HM_temp","_HT_temp","_IsNearPlot","_RM_temp","_RT_temp","_activatingPlayer","_buildcheck","_canBuild","_canBuildOnPlot","_canDo","_cancel","_charID","_classname","_counter","_dir","_distance","_exitWith","_found","_friendlies","_hasMaterials","_hasTools","_hasmaterials","_hastools","_helperColor","_inVehicle","_isAllowedUnderGround","_isOk","_isfriendly","_isowner","_lbIndex","_location","_location1","_location2","_mags","_message","_nearestPole","_needText","_objHDiff","_object","_objectHelper","_objectHelperDir","_objectHelperPos","_offset","_onLadder","_ownerID","_playerUID","_plotcheck","_position","_reason","_requiredmaterials","_requiredtools","_requireplot","_rotate","_text","_tmp_Pos","_tmpbuilt","_vehicle","_weaps","_zheightchanged","_zheightdirection","_finished"];
 
-_AdminCraft=false;
 
 _lbIndex = lbCurSel 3901;
 _classname = lbText [3901,_lbIndex];
@@ -25,10 +24,7 @@ _cancel = false;
 _reason = "";
 _canBuildOnPlot = false;
 _playerUID = getPlayerUID player;
-
-if(_playerUID in Admin_Crafting) then {
-	_AdminCraft=true;
-};
+_AdminCraft = _playerUID in Admin_Crafting;
 
 //create arrays for checking whether or not the player
 //has the correct tools and materials to make the desired item
@@ -212,8 +208,7 @@ _objectHelper attachTo [player,_offset];
 _object attachTo [_objectHelper,[0,0,0]];
 _position = getPosATL _objectHelper;
 
-if(_AdminCraft) then{
-} else {
+if(!_AdminCraft) then{
 	{
 		player removeMagazine _x;
 	} foreach _RM_temp;
