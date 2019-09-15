@@ -80,7 +80,7 @@ if(((count _requiredtools) == 0) or (_AdminCraft)) then {
 if (!_hasTools) then{
 	_HT_temp="You are missing the following tools:";
 	{  
-		_HT_temp=_HT_temp+" " + getText (configFile >> "CfgWeapons" >> _x >> "displayName");
+		_HT_temp=_HT_temp+" " + getText (configFile >> "CfgWeapons" >> _x >> "displayName") + ",";
 	}foreach _requiredtools;
 };
 
@@ -89,9 +89,9 @@ if (!_hasMaterials) then{
 	_HM_temp="You are missing the following materials:";
 	{  
 		if(getText (configFile >> "CfgMagazines" >> _x >> "displayName")=="Supply Crate") then{
-			_HM_temp=_HM_temp+" " + getText (configFile >> "CfgMagazines" >> _x >> "descriptionShort");
+			_HM_temp=_HM_temp+" " + getText (configFile >> "CfgMagazines" >> _x >> "descriptionShort") + ",";
 		}else{
-			_HM_temp=_HM_temp+" " + getText (configFile >> "CfgMagazines" >> _x >> "displayName");
+			_HM_temp=_HM_temp+" " + getText (configFile >> "CfgMagazines" >> _x >> "displayName") + ",";
 		};
 	}foreach _requiredmaterials;
 };
