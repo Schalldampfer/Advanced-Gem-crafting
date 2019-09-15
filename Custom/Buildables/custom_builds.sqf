@@ -10,8 +10,7 @@ Cleaned up a lot of old code that wasn't needed any more for this custom craftin
 Removed irrelevant variables from private block
 This file is called with zero parameters
 */
-private ["_AdminCraft","_HM_temp","_HT_temp","_IsNearPlot","_RM_temp","_RT_temp","_activatingPlayer","_buildcheck","_canBuild","_canBuildOnPlot","_canDo","_cancel","_charID","_classname","_counter","_dir","_distance","_exitWith","_found","_friendlies","_hasMaterials","_hasTools","_hasmaterials","_hastools","_helperColor","_inVehicle","_isAllowedUnderGround","_isOk","_isfriendly","_isowner","_lbIndex","_location","_location1","_location2","_mags","_message","_nearestPole","_needText","_objHDiff","_object","_objectHelper","_objectHelperDir","_objectHelperPos","_offset","_onLadder","_ownerID","_playerUID","_plotcheck","_position","_reason","_requiredmaterials","_requiredtools","_requireplot","_rotate","_text","_tmp_Pos","_tmpbuilt","_vehicle","_weaps","_zheightchanged","_zheightdirection","_finished"];
-
+private ["_AdminCraft","_HM_temp","_HT_temp","_IsNearPlot","_RM_temp","_RT_temp","_activatingPlayer","_buildcheck","_canBuild","_canBuildOnPlot","_canDo","_cancel","_charID","_classname","_counter","_dir","_vector","_distance","_exitWith","_found","_friendlies","_hasMaterials","_hasTools","_hasmaterials","_hastools","_helperColor","_inVehicle","_isAllowedUnderGround","_isOk","_isfriendly","_isowner","_lbIndex","_location","_location1","_location2","_mags","_message","_nearestPole","_needText","_objHDiff","_object","_objectHelper","_objectHelperDir","_objectHelperPos","_offset","_onLadder","_ownerID","_playerUID","_plotcheck","_position","_reason","_requiredmaterials","_requiredtools","_requireplot","_rotate","_text","_tmp_Pos","_tmpbuilt","_vehicle","_weaps","_zheightchanged","_zheightdirection","_finished"];
 
 _lbIndex = lbCurSel 3901;
 _classname = lbText [3901,_lbIndex];
@@ -117,6 +116,11 @@ DZE_F = false;
 
 DZE_cancelBuilding = false;
 
+DZE_updateVec = false;
+DZE_memDir = 0;
+DZE_memForBack = 0;
+DZE_memLeftRight = 0;
+
 call gear_ui_init;
 closeDialog 1;
 
@@ -208,6 +212,14 @@ _objectHelper attachTo [player,_offset];
 _object attachTo [_objectHelper,[0,0,0]];
 _position = getPosATL _objectHelper;
 
+if (isClass (configFile >> "SnapBuilding" >> _classname)) then {
+	["","","",["Init",_object,_classname,_objectHelper]] spawn snap_build;
+};
+
+if !(_classname in DZE_noRotate) then{
+	["","","",["Init","Init",0]] spawn build_vectors;
+};
+
 if(!_AdminCraft) then{
 	{
 		player removeMagazine _x;
@@ -257,21 +269,27 @@ while {_isOk} do {
 	if (DZE_4) then {
 		_rotate = true;
 		DZE_4 = false;
-		if (helperDetach) then {
-			_dir = -45;
-		} else {
-			_dir = 180;
+		if(DZE_dirWithDegrees) then{
+			DZE_memDir = DZE_memDir - DZE_curDegree;
+		}else{
+			DZE_memDir = DZE_memDir - 45;
 		};
 	};
 	if (DZE_6) then {
 		_rotate = true;
 		DZE_6 = false;
-		if (helperDetach) then {
-			_dir = 45;
-		} else {
-			_dir = 0;
+		if(DZE_dirWithDegrees) then{
+			DZE_memDir = DZE_memDir + DZE_curDegree;
+		}else{
+			DZE_memDir = DZE_memDir + 45;
 		};
 	};
+	
+	if(DZE_updateVec) then{
+		[_objectHelper,[DZE_memForBack,DZE_memLeftRight,DZE_memDir]] call fnc_SetPitchBankYaw;
+		DZE_updateVec = false;
+	};
+	
 	//Number keys above qwerty
 	//1=turn clockwise 1/16th of a circle
 	//2=detaches object from player - OBJECT MUST BE COMPLETELY ABOVE GROUND OR IT WILL DISAPPEAR!!
@@ -298,15 +316,16 @@ while {_isOk} do {
 	
 	if (DZE_F and _canDo) then {
 		if (helperDetach) then {
-			_objectHelperDir = getDir _objectHelper;
 			_objectHelper attachTo [player];
-			_objectHelper setDir _objectHelperDir-(getDir player);
+			DZE_memDir = DZE_memDir-(getDir player);
 			helperDetach = false;
+			[_objectHelper,[DZE_memForBack,DZE_memLeftRight,DZE_memDir]] call fnc_SetPitchBankYaw;
 		} else {
 			_objectHelperPos = getPosATL _objectHelper;
 			detach _objectHelper;
+			DZE_memDir = getDir _objectHelper;
+			[_objectHelper,[DZE_memForBack,DZE_memLeftRight,DZE_memDir]] call fnc_SetPitchBankYaw;
 			_objectHelper setPosATL _objectHelperPos;
-			_objectHelperDir = getDir _objectHelper;
 			_objectHelper setVelocity [0,0,0]; //fix sliding glitch
 			helperDetach = true;
 		};
@@ -314,25 +333,16 @@ while {_isOk} do {
 	};
 
 	if(_rotate) then {
-		if (helperDetach) then {
-			_objectHelperDir = getDir _objectHelper;
-			_objectHelperPos = getPosATL _objectHelper;
-			_objectHelper setDir _objectHelperDir+_dir;
-			_objectHelper setPosATL _objectHelperPos;
-		} else {
-			_objectHelper setDir _dir;
-			_objectHelper setPosATL _position;
-			//diag_log format["DEBUG Rotate BUILDING POS: %1", _position];
-		};
-
+		[_objectHelper,[DZE_memForBack,DZE_memLeftRight,DZE_memDir]] call fnc_SetPitchBankYaw;
 	};
 
 	if(_zheightchanged) then {
 		if (!helperDetach) then {
 			detach _objectHelper;
+			_objectHelperDir = getDir _objectHelper;
 		};
 
-		_position = getPosATL _objectHelper;
+		_position = [_objectHelper] call FNC_GetPos;
 
 		if(_zheightdirection == "up") then {
 			_position set [2,((_position select 2)+0.1)];
@@ -361,27 +371,31 @@ while {_isOk} do {
 			_objHDiff = _objHDiff - 0.01;
 		};
 
-		_objectHelper setDir (getDir _objectHelper);
-
-		_objectHelper setPosATL _position;
+		if (surfaceIsWater _position) then {
+			_objectHelper setPosASL _position;
+		} else {
+			_objectHelper setPosATL _position;
+		};
 
 		//diag_log format["DEBUG Change BUILDING POS: %1", _position];
 
 		if (!helperDetach) then {
 			_objectHelper attachTo [player];
 		};
+		[_objectHelper,[DZE_memForBack,DZE_memLeftRight,DZE_memDir]] call fnc_SetPitchBankYaw;
 	};
-
 
 	sleep 0.5;
 
-	_location2 = getPosATL player;
+	_location2 = [player] call FNC_GetPos;
+	_objectHelperPos = [_objectHelper] call FNC_GetPos;
 
 	if(DZE_5) exitWith {
 		_isOk = false;
+		_position = [_object] call FNC_GetPos;
 		detach _object;
 		_dir = getDir _object;
-		_position = getPosATL _object;
+		_vector = [(vectorDir _object),(vectorUp _object)];
 		deleteVehicle _object;
 		detach _objectHelper;
 		deleteVehicle _objectHelper;
@@ -391,6 +405,16 @@ while {_isOk} do {
 		_isOk = false;
 		_cancel = true;
 		_reason = format[localize "STR_EPOCH_BUILD_FAIL_MOVED",DZE_buildMaxMoveDistance];
+		detach _object;
+		deleteVehicle _object;
+		detach _objectHelper;
+		deleteVehicle _objectHelper;
+	};
+
+	if(_location1 distance _objectHelperPos > DZE_buildMaxMoveDistance) exitWith {
+		_isOk = false;
+		_cancel = true;
+		_reason = format[localize "STR_EPOCH_BUILD_FAIL_TOO_FAR",DZE_buildMaxMoveDistance];
 		detach _object;
 		deleteVehicle _object;
 		detach _objectHelper;
@@ -407,7 +431,17 @@ while {_isOk} do {
 		deleteVehicle _objectHelper;
 	};
 
-		if (player getVariable["combattimeout",0] >= diag_tickTime) exitWith {
+	if (DZE_BuildHeightLimit > 0 && {_position select 2 > DZE_BuildHeightLimit}) exitWith {
+		_isOk = false;
+		_cancel = true;
+		_reason = format[localize "STR_EPOCH_PLAYER_168",DZE_BuildHeightLimit];
+		detach _object;
+		deleteVehicle _object;
+		detach _objectHelper;
+		deleteVehicle _objectHelper;
+	};
+
+	if (player getVariable["combattimeout",0] >= diag_tickTime) exitWith {
 		_isOk = false;
 		_cancel = true;
 		_reason = localize "str_epoch_player_43";
@@ -441,6 +475,7 @@ if(!_cancel) then {
 	_finished = ["Medic",1,{player getVariable["combattimeout",0] >= diag_tickTime or DZE_cancelBuilding}] call fn_loopAction;
 
 	if (!_finished) exitWith {
+		deleteVehicle _tmpbuilt;
 		format[localize "str_epoch_player_47",_text,_reason] call dayz_rollingMessages;
 		dayz_actionInProgress = false;
 		if(!_AdminCraft) then {
@@ -453,13 +488,20 @@ if(!_cancel) then {
 
 	// Start Build
 	_tmpbuilt = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
-
 	_tmpbuilt setdir _dir;
+	_tmpbuilt setVariable["memDir",_dir,true];
 
 	// Get position based on object
 	_location = _position;
 
-	_tmpbuilt setPosATL _location;
+	_tmpbuilt setVectorDirAndUp _vector;
+
+	if (surfaceIsWater _location) then {
+		_tmpbuilt setPosASL _location;
+		_location = ASLtoATL _location;
+	} else {
+		_tmpbuilt setPosATL _location;
+	};
 
 	format[localize "str_epoch_player_138",_text] call dayz_rollingMessages;
 
@@ -473,9 +515,9 @@ if(!_cancel) then {
 
 	if (DZE_permanentPlot) then {
 		_tmpbuilt setVariable ["ownerPUID",dayz_playerUID,true];
-		PVDZ_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location,dayz_playerUID],[],player,dayz_authKey];
+		PVDZ_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location,dayz_playerUID,_vector],[],player,dayz_authKey];
 	} else {
-		PVDZ_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location],[],player,dayz_authKey];
+		PVDZ_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location, _vector],[],player,dayz_authKey];
    	};
 	publicVariableServer "PVDZ_obj_Publish";
 	"Your build was successful!" call dayz_rollingMessages;
