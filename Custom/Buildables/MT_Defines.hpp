@@ -274,6 +274,16 @@ class Custom_Buildables {
 		requiredtools[] = {"ItemToolbox","ItemEtool","ItemCrowbar"};
 		requiredmaterials[] ={"CinderBlocks","MortarBucket","PartGeneric"};
 	};
+	class DefaultWoodernHouse:Default {
+		offset[]={0,12,3};
+		requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemEtool"};
+		requiredmaterials[] ={"ItemWoodWallLg","ItemWoodWallLg","ItemWoodWallLg","ItemWoodWallLg","ItemWoodWallDoorLg","ItemWoodWallDoorLg","ItemWoodFloor","ItemWoodFloor","ItemWoodFloor","ItemWoodFloor","equip_nails","equip_nails"};
+	};
+	class DefaultCinderHouse:Default {
+		offset[]={0,12,4};
+		requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemSledge"};
+		requiredmaterials[] ={"CinderWall_DZ","CinderWall_DZ","CinderWall_DZ","CinderWall_DZ","CinderWallDoorway_DZ","CinderWallDoorway_DZ","metal_floor_kit","metal_floor_kit","metal_floor_kit","metal_floor_kit","MortarBucket","MortarBucket"};
+	};
 
 	//Topaz - Base Defense
 	//48
@@ -460,6 +470,11 @@ class Custom_Buildables {
 		requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemEtool","ItemSledge"};
 		requiredmaterials[] ={"bulk_ItemSandbag","bulk_ItemSandbag","PartPlankPack","ItemCanvas"};
 	};
+	class WarfareBCamp:Default {
+		offset[]={0,10,1};
+		requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemEtool","ItemSledge"};
+		requiredmaterials[] ={"ItemBriefcase100oz","ItemSandbagExLarge5x","ItemSandbagExLarge5x","ItemSandbagExLarge5x","ItemSandbagExLarge5x","PartPlankPack","PartPlankPack"};
+	};
 	class WarfareBDepot:Default {
 		offset[]={0,17,3};
 		requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemEtool","ItemSledge"};
@@ -492,6 +507,21 @@ class Custom_Buildables {
 			offset[]={0,5,4};
 			requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemSledge"};
 			requiredmaterials[] ={"full_cinder_wall_kit","full_cinder_wall_kit","full_cinder_wall_kit","full_cinder_wall_kit","bulk_PartGeneric","MortarBucket","MortarBucket","PartGlass","PartGlass","PartGlass"};
+		};
+		class Land_Ind_IlluminantTower:Default {
+			offset[]={0,5,4};
+			requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemSledge"};
+			requiredmaterials[] ={"equip_2inch_metal_pipe","equip_2inch_metal_pipe","equip_2inch_metal_pipe","equip_2inch_metal_pipe","equip_2inch_metal_pipe","equip_2inch_metal_pipe","equip_2inch_metal_pipe","equip_2inch_metal_pipe","equip_2inch_metal_pipe","equip_2inch_metal_pipe"};
+		};
+		class Land_radar_EP1:Default {
+			offset[]={0,5,4};
+			requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemSledge"};
+			requiredmaterials[] ={"equip_2inch_metal_pipe","equip_2inch_metal_pipe","equip_2inch_metal_pipe","equip_2inch_metal_pipe","equip_2inch_metal_pipe","equip_2inch_metal_pipe","equip_2inch_metal_pipe","equip_2inch_metal_pipe","equip_2inch_metal_pipe","equip_2inch_metal_pipe"};
+		};
+		class Land_ladderEP1:Default {
+			offset[]={0,5,4};
+			requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemSledge"};
+			requiredmaterials[] ={"equip_2inch_metal_pipe","equip_2inch_metal_pipe","equip_2inch_metal_pipe","equip_2inch_metal_pipe","equip_2inch_metal_pipe","equip_2inch_metal_pipe"};
 		};
 	};
 	class Communications {
@@ -601,6 +631,11 @@ class Custom_Buildables {
 		requiredtools[] = {"ItemToolbox","ItemCrowbar"};
 		requiredmaterials[] ={"bulk_PartGeneric","bulk_ItemTankTrap","ItemPole","ItemPole","Igla","Igla"};
 	};
+	class Rbs70_ACR:DefaultMountedWeapons {
+		offset[]={0,6,1.5};
+		requiredtools[] = {"ItemToolbox","ItemCrowbar","CDF_dogtags"};
+		requiredmaterials[] ={"bulk_PartGeneric","bulk_ItemTankTrap","ItemPole","ItemPole","Stinger","Laserbatteries"};
+	};
 	class M252:DefaultMountedWeapons {
 		offset[]={0,4,1.5};
 		requiredtools[] = {"ItemToolbox","ItemEtool","CDF_dogtags"};
@@ -620,6 +655,11 @@ class Custom_Buildables {
 		offset[]={0,4,0};
 		requiredtools[] = {"ItemToolbox"};
 		requiredmaterials[] ={"ItemLightBulb","PartGlass","ItemGenerator","ItemPole","ItemPole","ItemPole","ItemPole"};
+	};
+	class UH60_wreck_EP1:DefaultMountedWeapons {
+		offset[]={0,10,2};
+		requiredtools[] = {"ItemToolbox","ItemEtool","ItemCrowbar","ItemSledge"};
+		requiredmaterials[] ={"ItemPole","ItemPole","PartVRotor","ItemCorrugated","ItemCorrugated","bulk_PartGeneric","bulk_ItemTankTrap","2000Rnd_762x51_M134","2000Rnd_762x51_M134"};
 	};
 }
 	//Emerald - Exterior Items
@@ -688,6 +728,11 @@ class Custom_Buildables {
 	class MAP_garbage_paleta:DefaultEmerald {};
 	class MAP_Misc_TyreHeap:DefaultEmerald {};
 	class MAP_pneu:DefaultEmerald {};
+	};
+	class TheHouse{
+		class Land_Barn_W_02:DefaultWoodernHouse {};
+		class Land_dum_rasovna:DefaultWoodernHouse {};
+		class mbg_brickhouse_01_EO:DefaultCinderHouse {};
 	};
 	class MiscLarge{	//18  *
 	class Land_Ind_TankSmall:Default {

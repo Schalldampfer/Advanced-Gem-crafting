@@ -15,7 +15,8 @@ forEach [
 "MiscLarge", 
 "MiscSmall",
 "Scaffolding",
-"Sunshades"
+"Sunshades",
+"TheHouse"
 ]; 
 
 while {GlobalCraftingVariable==1} do {
@@ -55,6 +56,11 @@ call fnc_Load_Items;
 case 6:
 {
 ComboBoxResult="Sunshades";
+call fnc_Load_Items;
+};
+case 7:
+{
+ComboBoxResult="TheHouse";
 call fnc_Load_Items;
 };
 default { };
