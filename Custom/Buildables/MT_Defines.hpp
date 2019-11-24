@@ -604,13 +604,11 @@ class Custom_Buildables {
 		requiredtools[] = {"ItemToolbox"};
 		requiredmaterials[] ={"bulk_PartGeneric","bulk_ItemTankTrap","32Rnd_40mm_GMG","Attachment_ACOG"};
 	};
-/*
 	class ZU23_Ins:DefaultMountedWeapons {
-		offset[]={0,8,1};
+		offset[]={0,8,1.9};
 		requiredtools[] = {"ItemToolbox","ItemEtool","ItemCrowbar","ItemSledge","CDF_dogtags"};
 		requiredmaterials[] ={"ItemTopaz","ItemPole","ItemPole","ItemPole","ItemPole","bulk_PartGeneric","bulk_ItemTankTrap","bulk_ItemTankTrap","29Rnd_30mm_AGS30","29Rnd_30mm_AGS30","29Rnd_30mm_AGS30","Attachment_SCOPED"};
 	};
-*/
 	class SPG9_CDF:DefaultMountedWeapons {
 		offset[]={0,5,0};
 		requiredtools[] = {"ItemToolbox"};
