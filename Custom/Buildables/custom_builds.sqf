@@ -490,6 +490,7 @@ if(!_cancel) then {
 	_tmpbuilt = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
 	_tmpbuilt setdir _dir;
 	_tmpbuilt setVariable["memDir",_dir,true];
+	_tmpbuilt setVehicleAmmo 0;
 
 	// Get position based on object
 	_location = _position;

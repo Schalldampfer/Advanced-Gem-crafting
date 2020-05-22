@@ -118,13 +118,9 @@ if (_proceed) then {
   _pos = getPos _player;
   _pos = [(_pos select 0)+2*sin(_dir),(_pos select 1)+2*cos(_dir),0];
   _holder = createVehicle ['Weaponholder',_pos,[],0,'NONE'];
-  if (_countMats >= 2) then {
-    for "_i" from 0 to ((_countMats)- 1) do {
-      _chance = round((random 100) + (random 10));
-      _against = round((random 50) + (random 10));
-      if (_chance > _against) then {
-        _holder addMagazineCargoGlobal [(_getMats select _i),1];
-      };
+  for "_i" from 0 to ((_countMats)- 1) do {
+    if (random 1 > 0.5) then {
+      _holder addMagazineCargoGlobal [(_getMats select _i),1];
     };
   };
   PVDZ_obj_Destroy = [_objectID,_objectUID,player,_roadTar,dayz_authKey];

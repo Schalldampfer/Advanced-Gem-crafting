@@ -281,8 +281,13 @@ class Custom_Buildables {
 	};
 	class DefaultCinderHouse:Default {
 		offset[]={0,12,4};
-		requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemSledge"};
-		requiredmaterials[] ={"CinderWall_DZ","CinderWall_DZ","CinderWall_DZ","CinderWall_DZ","CinderWallDoorway_DZ","CinderWallDoorway_DZ","metal_floor_kit","metal_floor_kit","metal_floor_kit","metal_floor_kit","MortarBucket","MortarBucket"};
+		requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemEtool","ItemSledge"};
+		requiredmaterials[] ={"full_cinder_wall_kit","full_cinder_wall_kit","full_cinder_wall_kit","full_cinder_wall_kit","cinder_door_kit","cinder_door_kit","metal_floor_kit","metal_floor_kit","metal_floor_kit","metal_floor_kit","MortarBucket","MortarBucket"};
+	};
+	class DefaultMetalHouse:Default {
+		offset[]={0,12,3};
+		requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemEtool","ItemSledge"};
+		requiredmaterials[] ={"rusty_gate_kit","rusty_gate_kit","metal_panel_kit","metal_panel_kit","metal_panel_kit","metal_panel_kit","metal_floor_kit","metal_floor_kit","metal_floor_kit","metal_floor_kit","equip_nails","equip_nails"};
 	};
 
 	//Topaz - Base Defense
@@ -480,6 +485,11 @@ class Custom_Buildables {
 		requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemEtool","ItemSledge"};
 		requiredmaterials[] ={"ItemBriefcase100oz","ItemBriefcase100oz","ItemSandbagExLarge5x","ItemSandbagExLarge5x","bulk_ItemSandbag","bulk_ItemSandbag","bulk_ItemSandbag","bulk_ItemSandbag","bulk_ItemSandbag","PartPlankPack","PartPlankPack"};
 	};
+	class Land_MBG_HeavyShelter:Default {
+		offset[]={0,7,4};
+		requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemEtool","ItemSledge"};
+		requiredmaterials[] ={"ItemBriefcase100oz","ItemBriefcase100oz","cinder_door_kit","full_cinder_wall_kit","full_cinder_wall_kit","full_cinder_wall_kit","full_cinder_wall_kit","full_cinder_wall_kit","full_cinder_wall_kit","MortarBucket","bulk_PartGeneric"};
+	};
 	
 	};
 	class Tents{	//8
@@ -498,6 +508,11 @@ class Custom_Buildables {
 			requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemSledge"};
 			requiredmaterials[] ={"bulk_PartGeneric","metal_panel_kit"};
 		};
+		class MAP_posed:Default {
+			offset[]={0,5,4};
+			requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemSledge"};
+			requiredmaterials[] ={"PartPlankPack","PartPlankPack","PartPlywoodPack","PartPlywoodPack"};
+		};
 		class MAP_komin:Default {
 			offset[]={0,5,4};
 			requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemSledge"};
@@ -507,6 +522,11 @@ class Custom_Buildables {
 			offset[]={0,5,4};
 			requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemSledge"};
 			requiredmaterials[] ={"full_cinder_wall_kit","full_cinder_wall_kit","full_cinder_wall_kit","full_cinder_wall_kit","bulk_PartGeneric","MortarBucket","MortarBucket","PartGlass","PartGlass","PartGlass"};
+		};
+		class Land_aif_hlaska:Default {
+			offset[]={0,5,4};
+			requiredtools[] = {"ItemToolbox","ItemCrowbar","ItemSledge"};
+			requiredmaterials[] ={"ItemPole","ItemPole","ItemPole","ItemPole","ItemPole","ItemPole","metal_floor_kit"};
 		};
 		class Land_Ind_IlluminantTower:Default {
 			offset[]={0,5,4};
@@ -730,7 +750,11 @@ class Custom_Buildables {
 	class TheHouse{
 		class Land_Barn_W_02:DefaultWoodernHouse {};
 		class Land_dum_rasovna:DefaultWoodernHouse {};
+		class Land_aif_ryb_domek:DefaultWoodernHouse {};
 		class mbg_brickhouse_01_EO:DefaultCinderHouse {};
+		class MAP_Mil_ControlTower_dam:DefaultCinderHouse {};
+		class Land_MBG_Shoothouse_1:DefaultCinderHouse {};
+		//class MAP_Barrack2:DefaultMetalHouse {};
 	};
 	class MiscLarge{	//18  *
 	class Land_Ind_TankSmall:Default {
@@ -763,6 +787,10 @@ class Custom_Buildables {
 	class Land_Campfire_burning:DefaultEmerald {
 		offset[]={0,3,0.3};
 		requiredmaterials[] ={"ItemGoldBar10oz","ItemGoldBar10oz","PartWoodPile","ItemStone"};
+	};
+	class Land_Fire_burning:DefaultEmerald {
+		offset[]={0,3,0.3};
+		requiredmaterials[] ={"ItemObsidian","PartWoodPile","ItemStone"};
 	};
 	class Land_Fire_barrel_burning:DefaultEmerald {
 		offset[]={0,3,0.5};
@@ -1008,6 +1036,21 @@ class Custom_Buildables {
 	class MAP_p_urtica:DefaultBushes {};
 	class MAP_pumpkin:DefaultBushes {};
 	class MAP_pumpkin2:DefaultBushes {};
+	class MAP_c_DeadGrassBunch:DefaultBushes {};
+	class MAP_c_GrassAutumn:DefaultBushes {};
+	class MAP_c_GrassAutumn_t:DefaultBushes {};
+	class MAP_c_GrassAutumnBrown:DefaultBushes {};
+	class MAP_c_GrassBunch:DefaultBushes {};
+	class MAP_c_GrassCrooked:DefaultBushes {};
+	class MAP_c_stubble:DefaultBushes {};
+	class MAP_c_TreeSmallForest:DefaultBushes {};
+	class MAP_c_weed2:DefaultBushes {};
+	class MAP_c_weed3:DefaultBushes {};
+	class MAP_c_WeedDead:DefaultBushes {};
+	class MAP_c_WeedDead2:DefaultBushes {};
+	class MAP_cr_leaf:DefaultBushes {};
+	class MAP_cr_leaf2:DefaultBushes {};
+	class MAP_cr_leaf3:DefaultBushes {};
 	};
 	class SmallTrees{	//13
 	class MAP_t_betula1f:DefaultSmallTrees {offset[]={0,10,2};	//-5
@@ -1120,8 +1163,8 @@ class Custom_Buildables {
 	class Wells{	//5
 	class Land_Misc_Well_C_EP1:DefaultWells {};
 	class Land_Misc_Well_L_EP1:DefaultWells {};
-	class MAP_Misc_Well:DefaultWells {};
-	class MAP_Misc_WellPump:DefaultWells {};
+	//class MAP_Misc_Well:DefaultWells {};
+	//class MAP_Misc_WellPump:DefaultWells {};
 	class Land_pumpa:DefaultWells {};
 	};
 
@@ -1227,6 +1270,7 @@ class Custom_Buildables {
 	class MAP_conference_table_a:DefaultCabinets {};
 	class MAP_Dhangar_psacistul:DefaultCabinets {};
 	class MAP_office_table_a:DefaultCabinets {};
+	class MAP_lobby_counter:DefaultCabinets {};
 		};
 	class Shelves{	//8
 		class Land_Rack_EP1:DefaultBeds {};
@@ -1249,6 +1293,7 @@ class Custom_Buildables {
 	class MAP_stul_kuch1:DefaultBeds {};
 	class MAP_Table:DefaultBeds {};
 	class MAP_table_drawer:DefaultBeds {};
+	class Land_MBG_Outdoortable:DefaultBeds {};
 	};
 
 	//Citrine - Interior Items - Other
@@ -1568,9 +1613,6 @@ class Custom_Buildables {
 	  class MAP_Dam_ConcP_20:DefaultRoadStructure {
 	    requiredmaterials[] ={"ItemStone","ItemStone","ItemStone","ItemStone","ItemStone","ItemStone","ItemStone","ItemStone","MortarBucket","MortarBucket","MortarBucket","bulk_PartGeneric"};
 	    };
-	  class MAP_CncBlock:DefaultCncBlock {};
-	  class MAP_CncBlock_D:DefaultCncBlock {};
-	  class MAP_CncBlock_stripes:DefaultCncBlock {};
 	};
 
  };
