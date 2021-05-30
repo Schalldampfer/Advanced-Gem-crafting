@@ -13,7 +13,7 @@ if(_lbText!="") then {
 
 	_dir=0;
 	_objPos=getPos player;
-	_objPos set [2,5000];
+	_objPos set [2,6000];
 	_object = _lbText createVehicleLocal _objPos;
 	_object setDir _dir;
 
