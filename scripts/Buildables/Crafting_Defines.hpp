@@ -88,7 +88,7 @@
 #define MB_BUTTON_CANCEL  2
 #define MB_BUTTON_USER    4
 
-class RscButton
+class RscButton_AAC
 {
 	access = 0;
 	type = 1;
@@ -120,7 +120,7 @@ class RscButton
 	borderSize = 0;
 };
 
-class RscListBox
+class RscListBox_AAC
 {
 	access = 0;
 	type = 5;
@@ -161,7 +161,7 @@ class RscListBox
 	autoScrollRewind = 0;
 };
 
-class RscFrame
+class RscFrame_AAC
 {
 	type = CT_STATIC;
 	idc = -1;
@@ -174,7 +174,7 @@ class RscFrame
 	text = "";
 };
 
-class RscBackground
+class RscBackground_AAC
 {
 	type = 0;
 	style = ST_BACKGROUND;
@@ -186,7 +186,7 @@ class RscBackground
 	text = "";
 };
 
-class RscCombo
+class RscCombo_AAC
 {
 	access = 0;
 	type = 4;

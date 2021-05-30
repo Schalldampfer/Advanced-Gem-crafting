@@ -1,10 +1,12 @@
+private ["_RoadsAsphalt1","_RoadsAsphalt2","_RoadsAsphalt3","_RoadsGravel","_RoadsIntersect","_RoadsMud","_RoadsPaved","_RoadsRunways","_Helipads","_Structure",
+"_cmbTypes","_cmbType","_types","_typ","_getMats","_arry"];
 GlobalCraftingVariable = 1;
 GlobalComboboxVariable = 99;
 GlobalPreviewVariable = 0;
 Crafting_Object_Direction = -0.5;
 Crafting_Object_Radius = 7;
 Crafting_Object_Height = 0;
-Admin_Crafting = [];
+Admin_Crafting = ["76561198155787911"]; //ListOfPUIDsofAdmin
 AAC_1=false;
 AAC_2=false;
 AAC_3=false;
@@ -44,7 +46,9 @@ for "_i" from 0 to ( count _cmbTypes ) -1 do
        _arry = _arry + [[_x,[0,1]]];
       };
      } foreach _getMats;
-     DZE_modularConfig = DZE_modularConfig + [[_typ,_arry]];
+     if (!isDedicated) then {
+     	DZE_modularConfig = DZE_modularConfig + [[_typ,_arry]];
+     };
      Custom_Buildables = Custom_Buildables + [_typ];
      DayZ_SafeObjects = DayZ_SafeObjects + [_typ];
    };
@@ -52,5 +56,7 @@ for "_i" from 0 to ( count _cmbTypes ) -1 do
  };
 };
 
-DZE_maintainClasses = DZE_maintainClasses + Custom_Buildables;
+if (!isDedicated) then {
+	DZE_maintainClasses = DZE_maintainClasses + Custom_Buildables;
+};
 //{ diag_log format["Item in DZE_modularConfig : %1",_x];} foreach DZE_modularConfig;

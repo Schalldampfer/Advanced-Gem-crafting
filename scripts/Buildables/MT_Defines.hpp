@@ -589,6 +589,7 @@ class Custom_Buildables {
 		requiredtools[] = {"ItemToolbox"};
 		requiredmaterials[] ={"bulk_PartGeneric","bulk_ItemTankTrap","100Rnd_127x99_M2"};
 	};
+	/*
 	class BAF_L2A1_Tripod_W_NoDisassembly:DefaultMountedWeapons{
 		offset[]={0,4,1};
 		requiredtools[] = {"ItemToolbox"};
@@ -599,6 +600,7 @@ class Custom_Buildables {
 		requiredtools[] = {"ItemToolbox"};
 		requiredmaterials[] ={"bulk_PartGeneric","bulk_ItemTankTrap","100Rnd_127x99_M2","Attachment_ACOG"};
 	};
+	*/
 	class KORD_high:DefaultMountedWeapons{
 		offset[]={0,4,1.5};
 		requiredtools[] = {"ItemToolbox"};
@@ -609,6 +611,7 @@ class Custom_Buildables {
 		requiredtools[] = {"ItemToolbox"};
 		requiredmaterials[] ={"bulk_PartGeneric","bulk_ItemTankTrap","50Rnd_127x107_DSHKM"};
 	};
+	/*
 	class AGS_CDF:DefaultMountedWeapons{
 		offset[]={0,4,1};
 		requiredtools[] = {"ItemToolbox"};
@@ -669,6 +672,7 @@ class Custom_Buildables {
 		requiredtools[] = {"ItemToolbox","ItemEtool","ItemCrowbar","ItemSledge","CDF_dogtags"};
 		requiredmaterials[] ={"ItemTopaz","ItemPole","ItemPole","ItemPole","ItemPole","bulk_PartGeneric","bulk_ItemTankTrap","bulk_ItemTankTrap","OG9_HE","OG9_HE","OG9_HE","Attachment_SCOPED"};
 	};
+	*/
 	class SearchLight_US_EP1:DefaultMountedWeapons {
 		offset[]={0,4,0};
 		requiredtools[] = {"ItemToolbox"};
@@ -886,6 +890,15 @@ class Custom_Buildables {
 	class Land_aif_billboard_typowy_mirek_wallmount:DefaultBillboards {};
 	class Land_aif_billboard_konzert_wallmount:DefaultBillboards {};
 	class Land_aif_billboard_kulturscheune_wallmount:DefaultBillboards {};
+	class Billboard_Ammo_DZ:DefaultBillboards {};
+	class Billboard_Bandit_DZ:DefaultBillboards {};
+	class Billboard_Black_Market_DZ:DefaultBillboards {};
+	class Billboard_Building_DZ:DefaultBillboards {};
+	class Billboard_Hero_DZ:DefaultBillboards {};
+	class Billboard_Items_DZ:DefaultBillboards {};
+	class Billboard_Medical_DZ:DefaultBillboards {};
+	class Billboard_Weapons_DZ:DefaultBillboards {};
+	class Billboard_Wholesale_DZ:DefaultBillboards {};
 	};
 	class Boards{	//7
 	class Sign_Checkpoint:DefaultBoards {};

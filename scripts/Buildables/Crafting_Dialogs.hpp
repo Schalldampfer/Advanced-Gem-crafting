@@ -6,7 +6,7 @@ class Advanced_Crafting {
 	class Controls
 	{
 
-class AAC_Background: RscBackground
+class AAC_Background: RscBackground_AAC
 {
 	idc = 1800;
 	x = 0;
@@ -14,7 +14,7 @@ class AAC_Background: RscBackground
 	w = 1;
 	h = 0.9;
 };
-class RequiredToolsFrame: RscFrame
+class RequiredToolsFrame: RscFrame_AAC
 {
 	idc = 1801;
 	x = 0.7125;
@@ -22,7 +22,7 @@ class RequiredToolsFrame: RscFrame
 	w = 0.275;
 	h = 0.18;
 };
-class RequiredMaterialsFrame: RscFrame
+class RequiredMaterialsFrame: RscFrame_AAC
 {
 	idc = 1802;
 	x = 0.7125;
@@ -33,7 +33,7 @@ class RequiredMaterialsFrame: RscFrame
 class AAC_Label: RscText
 {
 	idc = 1000;
-	text = "Advanced Alchemical Crafting:"; 
+	text = "Advanced Alchemical Crafting:";
 	x = 0.0375;
 	y = 0.06;
 	w = 0.37;
@@ -51,7 +51,7 @@ class Gem_Used_Label: RscText
 class Choose_Catagory_Label: RscText
 {
 	idc = 1002;
-	text = "<< Choose a category!"; 
+	text = "<< Choose a category!";
 	x = 0.425;
 	y = 0.12;
 	w = 0.2625;
@@ -60,7 +60,7 @@ class Choose_Catagory_Label: RscText
 class Required_Materials_Label: RscText
 {
 	idc = 1003;
-	text = "Required Materials"; 
+	text = "Required Materials";
 	x = 0.75;
 	y = 0.28;
 	w = 0.215;
@@ -69,7 +69,7 @@ class Required_Materials_Label: RscText
 class Required_Tools_Label: RscText
 {
 	idc = 1004;
-	text = "Required Tools"; 
+	text = "Required Tools";
 	x = 0.75;
 	y = 0.04;
 	w = 0.215;
@@ -84,7 +84,7 @@ class RscText_1105: RscText
 	w = 0.2375;
 	h = 0.04;
 };
-class Catagory_Combo: RscCombo
+class Catagory_Combo: RscCombo_AAC
 {
 	idc = 3900;
 	text = "Catagory"; 
@@ -92,10 +92,10 @@ class Catagory_Combo: RscCombo
 	y = 0.12;
 	w = 0.375;
 	h = 0.04;
-	onLBSelChanged = "GlobalComboboxVariable = _this select 1;";	
+	onLBSelChanged = "GlobalComboboxVariable = _this select 1;";
 };
 
-class Items_Listbox: RscListBox
+class Items_Listbox: RscListBox_AAC
 {
 	idc = 3901;
 	text = "Items"; 
@@ -105,7 +105,7 @@ class Items_Listbox: RscListBox
 	h = 0.58;
 	onLBSelChanged = "call fnc_Load_Mats_and_Tools";
 };
-class Exit_Button: RscButton
+class Exit_Button: RscButton_AAC
 {
 	idc = 4900;
 	text = "Exit"; 
@@ -115,7 +115,7 @@ class Exit_Button: RscButton
 	h = 0.04;
 	action = "GlobalCraftingVariable=0";
 };
-class Craft_Button: RscButton
+class Craft_Button: RscButton_AAC
 {
 	idc = 4901;
 	text = "Craft"; 
@@ -123,9 +123,9 @@ class Craft_Button: RscButton
 	y = 0.84;
 	w = 0.125;
 	h = 0.04;
-	action = "execVM ""custom\Buildables\custom_builds.sqf""";
+	action = "execVM ""scripts\Buildables\custom_builds.sqf""";
 };
-class Preview_Button: RscButton
+class Preview_Button: RscButton_AAC
 {
 	idc = 4902;
 	text = "Preview"; 
@@ -133,9 +133,9 @@ class Preview_Button: RscButton
 	y = 0.84;
 	w = 0.1375;
 	h = 0.04;
-	action = "execVM ""custom\Buildables\preview_item.sqf""";	
+	action = "execVM ""scripts\Buildables\preview_item.sqf""";
 };
-class Zoom_Minus_Button: RscButton
+class Zoom_Minus_Button: RscButton_AAC
 {
 	idc = 4903;
 	text = "Zoom -"; 
@@ -146,7 +146,7 @@ class Zoom_Minus_Button: RscButton
 	onload = "ctrlShow [_this,false]";
 	action = "Crafting_Object_Radius = Crafting_Object_Radius + 1";	
 	};
-class Zoom_Plus_Button: RscButton
+class Zoom_Plus_Button: RscButton_AAC
 {
 	idc = 4904;
 	text = "Zoom +"; 
@@ -157,7 +157,7 @@ class Zoom_Plus_Button: RscButton
 	onload = "ctrlShow [_this,false]";
 	action = "Crafting_Object_Radius = Crafting_Object_Radius - 1";	
 	};
-class MoveUp_Button: RscButton
+class MoveUp_Button: RscButton_AAC
 {
 	idc = 4905;
 	text = "Camera Up"; 
@@ -168,7 +168,7 @@ class MoveUp_Button: RscButton
 	onload = "ctrlShow [_this,false]";
 	action = "Crafting_Object_Height = Crafting_Object_Height + 1";	
 	};
-class MoveDown_Button: RscButton
+class MoveDown_Button: RscButton_AAC
 {
 	idc = 4906;
 	text = "Camera Down"; 
@@ -179,7 +179,7 @@ class MoveDown_Button: RscButton
 	onload = "ctrlShow [_this,false]";
 	action = "Crafting_Object_Height = Crafting_Object_Height - 1";	
 	};	
-class SpinCameraLeft_Button: RscButton
+class SpinCameraLeft_Button: RscButton_AAC
 {
 	idc = 4907;
 	text = "<<SPIN"; 
@@ -190,7 +190,7 @@ class SpinCameraLeft_Button: RscButton
 	onload = "ctrlShow [_this,false]";
 	action = "Crafting_Object_Direction = Crafting_Object_Direction + 0.5";	
 	};	
-class SpinCameraRight_Button: RscButton
+class SpinCameraRight_Button: RscButton_AAC
 {
 	idc = 4908;
 	text = "SPIN>>"; 
@@ -199,9 +199,9 @@ class SpinCameraRight_Button: RscButton
 	w = 0.1375;
 	h = 0.04;
 	onload = "ctrlShow [_this,false]";
-	action = "Crafting_Object_Direction = Crafting_Object_Direction - 0.5";	
+	action = "Crafting_Object_Direction = Crafting_Object_Direction - 0.5";
 	};	
-class Return_Button: RscButton
+class Return_Button: RscButton_AAC
 {
 	idc = 4909;
 	text = "Return"; 
@@ -210,7 +210,7 @@ class Return_Button: RscButton
 	w = 0.1375;
 	h = 0.04;
 	onload = "ctrlShow [_this,false]";
-	action = "GlobalPreviewVariable = 1";	
+	action = "GlobalPreviewVariable = 1";
 	};		
 class Required_Tools_01: RscText
 {

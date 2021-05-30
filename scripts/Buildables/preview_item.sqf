@@ -13,8 +13,8 @@ if(_lbText!="") then {
 
 	_dir=0;
 	_objPos=getPos player;
-	_objPos set [2,6000];
-	_object = createVehicle [_lbText, _objPos, [], 0, "CAN_COLLIDE"];
+	_objPos set [2,5000];
+	_object = _lbText createVehicleLocal _objPos;
 	_object setDir _dir;
 
 	cutText ["","BLACK IN",0.2];
