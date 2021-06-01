@@ -16,7 +16,7 @@ if(_lbText!="") then {
 	_objPos set [2,6000];
 	_object = _lbText createVehicleLocal _objPos;
 	_object setDir _dir;
-	_objPos setPos _objPos;
+	_object setPos _objPos;
 	_objPos = getPos _object;
 
 	cutText ["","BLACK IN",0.2];
