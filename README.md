@@ -55,7 +55,7 @@ And, in `DayZ_Epoch_XX.Map\description.ext`
 ```
 5. Do some jobs for dismantling: by @Arstan13
 
-This step will allow your players to remove items they craft just like they can currently remove Epoch items. If they die, they will no longer be able to remove them. 
+This step will allow your players to maintain and remove items they craft just like they can currently remove Epoch items.
 
 In `dayz_code\compiles\fn_selfActions.sqf`, find 
 ```sqf
