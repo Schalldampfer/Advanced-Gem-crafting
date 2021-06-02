@@ -85,7 +85,7 @@ In scripts.txt, add exceptions (DO NOT REPLACE!) like
 ```
 camCreate  !="cutText [\"\",\"BLACK IN\",0.2];\n\n_camera = \"camera\" camCreate [10,10,5000];\n_camera cameraEffect [\"INTERNAL\",\"BACK\"];"
 createDialog  !"0;createDialog 'ZCraft';" !"0;createDialog 'Advanced_Crafting';[]"
-createVehicleLocal  !"_objPos set [2,6000];\n_object = _lbText createVehicleLocal _objPos;\n_object setDir _dir;"
+createVehicleLocal !"_objPos set [2,6000];\n_object = _lbText createVehicleLocal _objPos;\n_object setDir _dir;" !"_arrow = \"Sign_arrow_down_EP1\" createVehicleLocal (getPos _roadTar);\n_arrow setVehiclePosition [(_roadTar modelToWorld [0,0,1]), [], 0];"
 cutText  !="_object setDir _dir;\n_object setPos _objPos;\n_objPos = getPos _object;\n\ncutText [\"\",\"BLACK IN\",0.2];"
 DZE_PlotManagementAdmins !"_isAdmin = dayz_playerUID in DZE_PlotManagementAdmins;"
 hint !"case default {hint \"Error! nothing selected!!!\"};"
